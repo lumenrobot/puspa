@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/puspad.dir/main.cc.o  -o puspad -rdynamic libaiml/libBrain.a Socket/libServerSocket.a -laiml -lstd_utils -lxml2 ../Common/libErrors.a 

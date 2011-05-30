@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Common/Errors.h
+string
+-
+
+../Server/Socket/ServerSocket.h
+string
+-
+
+../Server/libaiml/Brain.h
+string
+-
+libaiml/aiml.h
+-
+
+/home/inspiration/samson/puspa/Server/main.cc
+iostream
+-
+string
+-
+Brain.h
+/home/inspiration/samson/puspa/Server/Brain.h
+Errors.h
+/home/inspiration/samson/puspa/Server/Errors.h
+ServerSocket.h
+/home/inspiration/samson/puspa/Server/ServerSocket.h
+
+/usr/local/include/libaiml/aiml.h
+string
+-
+list
+-
+errors.h
+/usr/local/include/libaiml/errors.h
+
+/usr/local/include/libaiml/errors.h
+

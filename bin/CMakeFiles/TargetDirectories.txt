@@ -1,0 +1,8 @@
+/home/inspiration/samson/puspa/bin/Server/libaiml/CMakeFiles/Brain.dir
+/home/inspiration/samson/puspa/bin/Client/Socket/CMakeFiles/ClientSocket.dir
+/home/inspiration/samson/puspa/bin/Client/Julius/CMakeFiles/Ear.dir
+/home/inspiration/samson/puspa/bin/Common/CMakeFiles/Errors.dir
+/home/inspiration/samson/puspa/bin/Client/eSpeak/CMakeFiles/Mouth.dir
+/home/inspiration/samson/puspa/bin/Client/CMakeFiles/PUSPA.dir
+/home/inspiration/samson/puspa/bin/Server/Socket/CMakeFiles/ServerSocket.dir
+/home/inspiration/samson/puspa/bin/Server/CMakeFiles/puspad.dir

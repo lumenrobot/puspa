@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/inspiration/samson/puspa/Common/Errors.cc
+cstring
+-
+cerrno
+-
+sys/types.h
+-
+winsock2.h
+-
+ws2tcpip.h
+-
+sys/socket.h
+-
+netdb.h
+-
+Errors.h
+/home/inspiration/samson/puspa/Common/Errors.h
+
+/home/inspiration/samson/puspa/Common/Errors.h
+string
+-
+

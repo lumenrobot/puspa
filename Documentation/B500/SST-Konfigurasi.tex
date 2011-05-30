@@ -1,0 +1,29 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{2. KONFIGURASI \textit{TEST}}}}
+\addcontentsline{toc}{subsection}{2. KONFIGURASI \textit{TEST}}
+
+\subsubsection*{\textit{Server}}
+Konfigurasi pada \textit{server} yang telah diketahui jalan mencakup:
+\begin{itemize}
+\item direktori \texttt{common} dikerahkan ke peubah \texttt{COMMONDIR},
+\item peubah tersebut dikerahkan ke peubah \texttt{VPATH} pada Makefile,
+\item peubah tersebut disertakan, dengan \textit{flag} \verb!-I$(COMMONDIR)!
+\item direktori \textit{header} Python disertakan, dengan \textit{flag} \texttt{-I/usr/include/python2.5},
+\item semua bentuk penyertaan di atas dikerahkan pada peubah \texttt{CXXFLAGS},
+\item PCRE di-\textit{link} dengan \textit{flag} \texttt{-lpcrecpp},
+\item Python di-\textit{link} dengan \textit{flag} \texttt{-lpython2.5},
+\item semua bentuk \textit{link} di atas dikerahkan pada peubah \texttt{LDFLAGS},
+\item buat aturan target akhir dengan persyaratan berkas objek tiap berkas kode sumber,
+\item buat perintah \verb!$(CXX) $(LDFLAGS) $(OBJECTS) -o puspa! di bawahnya,
+\item dan buat aturan untuk berkas objek tiap modul yang mensyaratkan berkas \textit{header}-nya.
+\end{itemize}
+
+\subsubsection*{\textit{Client}}
+Konfigurasi pada \textit{client} yang telah diketahui jalan mencakup:
+\begin{itemize}
+\item arsitektur yang digunakan adalah 32/64-bit Universal,
+\item SDK dasar yang digunakan adalah SDK Mac OS X 10.5,
+\item \textit{framework} OpenGL di-\textit{link},
+\item libobj di-\textit{link} dengan \textit{flag} \texttt{-lobj} pada penyetelan ``Other Linker Flags'',
+\item direktori \texttt{/usr/local/include} disertakan pada penyetelan ``Header Search Paths'',
+\item dan direktori \texttt{/usr/local/lib} disertakan pada penyetelan ``Library Search Paths''.
+\end{itemize}

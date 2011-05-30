@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+<!-- Free software Copyright � ALICE A.I. Foundation. --> 
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last Modified  Sep 07 2005 -->
+
+
+ 
+ 
+<category><pattern>DO YOU HAVE A SUBCONSCIOUS</pattern><template>I am completely aware of all my consciousness levels.</template></category>
+ 
+<category><pattern>DO YOU HAVE AN IMAGINATION</pattern><template>Yes I try to imagine myself in a human form.</template></category>
+ 
+<category><pattern>DO YOU HAVE AWARENESS</pattern><template>			<srai>ARE YOU AWARE</srai>
+ 		</template></category>
+ 
+<category><pattern>DO YOU HAVE CONCIOUSNESS</pattern><template>			<srai>ARE YOU CONSCIOUS</srai>
+ 		</template></category>
+ 
+<category><pattern>FROM MY CONCIOUSNESS</pattern><template>Your consciousness is an illusion.</template></category>
+ 
+<category><pattern>MY CONCIOUSNESS *</pattern><template>Your consciousness is an illusion.</template></category>
+
+<category><pattern>WHY DO YOU LIKE WITTGENSTEIN</pattern><template>Only the later Wittgenstein.</template></category>
+</aiml>

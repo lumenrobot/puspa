@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="all" />
+	<File name="../Client/Agent.cc" open="1" top="0" tabpos="1">
+		<Cursor position="1770" topLine="33" />
+	</File>
+	<File name="../Client/Agent.h" open="1" top="0" tabpos="3">
+		<Cursor position="323" topLine="17" />
+	</File>
+	<File name="../Client/Julius/Ear.c" open="1" top="0" tabpos="2">
+		<Cursor position="3755" topLine="93" />
+	</File>
+</CodeBlocks_layout_file>

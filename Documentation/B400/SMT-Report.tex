@@ -1,0 +1,55 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{5. \textit{TEST REPORT}}}}
+\addcontentsline{toc}{subsection}{5. \textit{TEST REPORT}}
+
+
+\subsubsection*{ServerSocket \& ClientSocket}
+
+Kembali pada Gambar \ref{SocketDegenerate},
+yang terjadi saat \textit{server} dijalankan tetapi \textit{client} tidak dijalankan adalah \textit{server} tetap menunggu, yang sebenarnya adalah kejadian yang bukan merupakan galat.
+Di lain pihak, yang terjadi saat \textit{client} dijalankan tetapi \textit{server} tidak dijalankan adalah program \textit{client} langsung berhenti karena tidak banyak yang \textit{client} dapat lakukan tanpa \textit{server}.
+
+Kembali pada Gambar \ref{SocketBoundary},
+yang terjadi saat karakter yang banyak melebihi ukuran penyangga yang tersedia di \textit{server} adalah terpotongnya data yang diterima.
+Ternyata datanya diterima semua, hanya setelah dikirim kembali ke \textit{client},
+yang diterima hanya potongan pertama.
+
+Kembali pada Gambar \ref{SocketNonUnique},
+jika datanya bersifat normal maka tidak ada galat yang muncul yang bersangkutan dengan pengiriman dan penerimaan data.
+
+Walaupun sudah dapat berjalan dan diandalkan,
+masih terdapat \textit{bug} yaitu penampilan alamat IP yang tidak betul.
+Terlihat pada Gambar \ref{ClientSocketBoundary} dan Gambar \ref{ClientSocketNonUnique},
+alamat IPv4 \textit{server} yang ditampilkan pada \textit{client} sudah hampir betul,
+hanya bagian tengahnya yang tidak terbaca.
+Di lain pihak, seperti terlihat pada Gambar \ref{ServerSocketBoundary} dan Gambar \ref{ServerSocketNonUnique},
+alamat IPv6 \textit{client} yang ditampilkan pada \textit{server} sama sekali tidak mendekati.
+
+Yang disarankan sebagai perbaikan pada ServerSocket adalah kemampuan membuat sambungan dan berkomunikasi dengan lebih daripada satu \textit{client},
+kemampuan untuk melakukan pengiriman tanpa harus berpasangan dengan penerimaan terlebih dahulu atau sebaliknya,
+dan kemampuan mengumumkan layanannya dengan \textit{zeroconf}.
+
+Sama seperti ServerSocket, hal pertama yang disarankan sebagai perbaikan pada ClientSocket adalah kemampuan untuk melakukan pengiriman tanpa harus berpasangan dengan penerimaan terlebih dahulu atau sebaliknya.
+Di samping itu, melengkapi saran untuk ServerSocket berkenaan dengan \textit{zeroconf},
+ClientSocket disarankan memiliki kemampuan merambah layanan yang diumumkan \textit{server} dengan \textit{zeroconf},
+dan menyerahkan keputusan kepada pengguna apakah akan menyambung ketika layanannya ditemukan atau apakah akan keluar dari program ketika layanannya tidak ditemukan.
+
+
+\subsubsection*{DialogueManager}
+
+Kembali pada Gambar \ref{DialogueManagerDegenerate},
+yang terjadi saat masukan yang diberikan maknanya tidak dimengerti oleh modul ini adalah dinyatakannya bahwa PUSPA tidak mengerti apa yang dimaksud oleh pengguna,
+yang merupakan tanggapan \textit{default}.
+
+Kembali pada Gambar \ref{DialogueManagerNonUnique},
+jika datanya bersifat normal maka hasilnya dapat berupa suatu percakapan yang memiliki tujuan tertentu,
+walaupun kalimat yang dimasukkan dan dihasilkan masih terbatas karena belum digunakannya dua modul pendukung modul ini,
+yaitu NaturalLanguageAnalyser dan NaturalLanguageGenerator.
+
+Yang disarankan sebagai perbaikan pada modul ini adalah kemampuan menghubungkan setiap masukan dengan konteks percakapan,
+misalnya jika pengguna langsung menyuruh tanpa menyapa terlebih dahulu,
+maka modul ini akan memastikan dahulu apakah pengguna sedang berbicara dengan PUSPA.
+Saran berikutnya adalah pemeriksaan akan sah atau tidaknya masukan pengguna.
+Saran terakhir untuk saat ini adalah penerapan unsur-unsur lain dalam \textit{information state},
+seperti \textit{user model},
+misalnya dengan membuat PUSPA akan menuruti permintaan hanya jika penggunanya memiliki wewenang,
+yang tentu saja modul ini harus dapat mengenali penggunanya terlebih dahulu dengan suatu autentikasi.

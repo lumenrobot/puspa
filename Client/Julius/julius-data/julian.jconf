@@ -1,0 +1,32 @@
+##
+## modifikasi fast.conf
+##
+
+## Log File
+#-logfile dictation-julius.log
+
+## Language Model
+#-d Word-LM.bin
+#-v dict-kata
+-dfa grammar/lskk.dfa
+-v grammar/lskk.dict
+
+-silhead "<sil>"
+-siltail "</sil>"
+
+## Acoustic Model
+-h hmm15/hmmdefs
+-hlist tiedlist
+
+#-separatescore
+
+#-n 5
+#-output 1
+
+-input mic
+-zmeanframe
+
+-rejectshort 200
+
+#-demo
+#-debug

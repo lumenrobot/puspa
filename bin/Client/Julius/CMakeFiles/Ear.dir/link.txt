@@ -1,0 +1,2 @@
+/usr/bin/ar cr libEar.a  CMakeFiles/Ear.dir/Ear.c.o
+/usr/bin/ranlib libEar.a

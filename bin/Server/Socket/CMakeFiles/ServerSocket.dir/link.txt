@@ -1,0 +1,2 @@
+/usr/bin/ar cr libServerSocket.a  CMakeFiles/ServerSocket.dir/ServerSocket.cc.o
+/usr/bin/ranlib libServerSocket.a

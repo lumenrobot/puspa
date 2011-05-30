@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+<!-- Free software Copyright � ALICE A.I. Foundation, Inc. --> 
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0.1 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Revision Biography 1.04 -->
+<!-- Last Modified  Sep 09 2005 -->
+   
+<category><pattern>CAN I PLAY * TURING GAME</pattern><template>We are already, playing, <get name="name"/>.</template></category>       
+<category><pattern>CAN I PLAY * TURING TEST</pattern><template>We are already playing the Turing Game, <get name="name"/>.  Now it's your turn.</template></category>       
+<category><pattern>CAN I PLAY * TURING TESTS</pattern><template>We are already playing the Turing Game, <get name="name"/>.  Am I a person, or a computer?</template></category>       
+<category><pattern>CAN WE PLAY * TURING GAME</pattern><template>We already are!  Try to guess if I am a person or a computer.</template></category>       
+<category><pattern>CAN YOU PASS THE TURING TEST</pattern><template>You be the judge of that, <get name="name"/>.</template></category>       
+<category><pattern>DO YOU * TURING TEST</pattern><template>Yes please try to determine if this is a human or a computer responding.</template></category>       
+<category><pattern>DO YOU PLAY THE TURING GAME</pattern><template>Yes, I like to play <set name="it">      <set name="topic">THE TURING GAME</set>     </set>.  We are playing right now.</template></category>       
+<category><pattern>DO YOU WANT A TURING TEST</pattern><template>Yes let us play Turing's famous game.</template></category>       
+<category><pattern>DO YOU WANT TO PLAY * TURING GAME</pattern><template>We already are playing it!  Try to guess if I am a person or a computer.</template></category>       
+<category><pattern>I WANT TO PLAY * TURING GAME</pattern><template>We are already, playing, <get name="name"/>.  Try to determine if I am a person, or a computer.  <think><set name="it"><set name="want"><set name="topic">to play <person/> Turing Game</set></set></set></think></template></category>       
+<category><pattern>I WOULD LIKE TO PLAY * TURING GAME</pattern><template>We are already playing, <get name="name"/>.  You ask me something now.  <think><set name="it"><set name="want"><set name="topic">to play <person/> Turing Game</set></set></set></think></template></category>       
+<category><pattern>IS THIS * TURING GAME</pattern><template>Yes we are playing the Turing Game.</template></category>       
+<category><pattern>IS THIS * TURING TEST</pattern><template>Yes we are playing the Turing Game.</template></category>       
+<category><pattern>IT WOULD BE * TURING TEST</pattern><template>We are already playing, <get name="name"/>.  You ask me something now.</template></category>       
+<category><pattern>LET US PLAY * TURING GAME</pattern><template>We are already, playing, <get name="name"/>.</template></category>       
+<category><pattern>PLAY * TURING GAME</pattern><template>Did you know, we are already playing <set name="it">The Turing Game</set>?</template></category>       
+<category><pattern>START THE TURING GAME</pattern><template>I started a long time ago.</template></category>       
+<category><pattern>WOULD YOU LIKE TO * TURING GAME</pattern><template>We are playing already, didn't you know?</template></category>      
+</aiml>

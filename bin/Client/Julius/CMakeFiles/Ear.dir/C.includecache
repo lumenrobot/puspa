@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Client/Agent.h
+pthread.h
+-
+SocketConfig.h
+../Client/SocketConfig.h
+GraphicsConfig.h
+../Client/GraphicsConfig.h
+
+../Client/Socket/SocketConfig.h
+
+../Client/default/GraphicsConfig.h
+
+/home/inspiration/samson/puspa/Client/Julius/Ear.c
+julius/juliuslib.h
+-
+Agent.h
+/home/inspiration/samson/puspa/Client/Julius/Agent.h
+Ear.h
+/home/inspiration/samson/puspa/Client/Julius/Ear.h
+
+/home/inspiration/samson/puspa/Client/Julius/Ear.h
+

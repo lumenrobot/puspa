@@ -1,0 +1,48 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{3. \textit{INTERNAL INTERFACE}}}}
+\addcontentsline{toc}{subsection}{3. \textit{INTERNAL INTERFACE}}
+
+\subsubsection*{\textit{System Interface}}
+Antarmuka yang dipakai bersama antar subsistem adalah TCP/IP.
+Sejauh ini,
+subsistem \textit{server} membuka layanannya pada alamat \texttt{rumahtenda.web.id},
+dan \textit{port} 12110.
+Subsistem \textit{client} hanya harus menyambung ke layanan tersebut,
+dan berkomunikasi melalui \textit{port} pilihan sistem operasi \textit{client}.
+
+\subsubsection*{\textit{Subsystem Interface}}
+Berikut ini adalah daftar antarmuka tiap modul, beserta penjelasannya.
+\begin{itemize}
+\item ClientSocket
+	\begin{itemize}
+	\item\verb!const char* receive();!\\
+	yang berfungsi menerima data ketika berkomunikasi dengan \textit{server}.
+	\item\verb!void send(const string& output) const;!\\
+	yang berfungsi mengirim data ketika berkomunikasi dengan \textit{server}.
+	\end{itemize}
+\item ServerSocket
+	\begin{itemize}
+	\item\verb!void listen() const;!\\
+	yang berfungsi mendengarkan apakah ada \textit{client} yang menyambung.
+	\item\verb!void accept();!\\
+	yang berfungsi menerima permintaan sambungan \textit{client}.
+	\item\verb!void receive(string& input) const;!\\
+	yang berfungsi menerima data ketika berkomunikasi dengan \textit{client}.
+	\item\verb!void send(const string& output) const;!\\
+	yang berfungsi mengirim data ketika berkomunikasi dengan \textit{client}.
+	\end{itemize}
+\item NaturalLanguageAnalyser
+	\begin{itemize}
+	\item\verb!void analyse(const string& input, string& rep);!\\
+	yang berfungsi membuat perwakilan makna \texttt{rep} dari masukan \texttt{input}.
+	\end{itemize}
+\item DialogueManager
+	\begin{itemize}
+	\item\verb!void respond(const string& input, string& output);!\\
+	yang berfungsi membuat tanggapan \texttt{output} dari masukan \texttt{input}.
+	\end{itemize}
+\item NaturalLanguageGenerator
+	\begin{itemize}
+	\item\verb!void generate(const string& rep, string& output);!\\
+	yang berfungsi membuat keluaran \texttt{output} dari perwakilan makna \texttt{rep}.
+	\end{itemize}
+\end{itemize}

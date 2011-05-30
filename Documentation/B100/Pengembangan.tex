@@ -1,0 +1,79 @@
+\subsection*{\textsf{\normalsize 2.5\hspace{0.5cm}UPAYA PENGEMBANGAN}}
+\addcontentsline{toc}{subsection}{2.5 UPAYA PENGEMBANGAN}
+\hyphenation{de-ngan Speech-Recogniser}
+
+Riset dan pengembangan PUSPA dilakukan oleh kelompok tesis yang saat ini anggotanya adalah:
+\begin{itemize}
+\item Erik Prabowo Kamal,
+%\item Rio Andita Setiabakti,
+\item dan Willy Derbyanto,
+\end{itemize}
+dengan kemungkinan penambahan anggota seiring dengan waktu dan kebutuhan, dan dengan pengawasan tim dan pembimbing tesis sebagai tim ahli.
+
+Alat pengembangan yang digunakan adalah sebagai berikut:
+\begin{itemize}
+	\item Bahasa pemrograman: C++.
+	\item Pustaka/\textit{Framework}: C++ Std Lib, Boost, OpenCog.
+	\item \textit{Version control system}: Git.
+	\item Dokumentasi: \LaTeX.
+	\item Alat lainnya: CMake.
+\end{itemize}
+
+Pengembangan PUSPA dibagi menjadi tiga tahap:
+\begin{itemize}
+	\item Tahap I, tahap pengembangan fungsi dasar yang meliputi fungsi percakapan, dan fungsi yang berkaitan dengan rupa (\textit{modeling}, animasi dasar, dan \textit{rendering}).
+	\item Tahap II, tahap pengembangan fungsi unggulan yang meliputi fungsi pelaksanaan tugas, mata dan kamera, kepribadian, animasi lanjut, dan pelacakan wajah pengguna.
+	\item Tahap III, yaitu tahap pengembangan fungsi lanjut seperti hubungan \textit{client/server} fitur \textit{ubiquity}.
+\end{itemize}
+Ketiga tahapan tersebut dilaksanakan selama sembilan bulan. Tabel~\ref{tab:DevTime} menunjukkan tabel pembagian tugas dan waktu pengerjaannya.
+
+\begin{table}
+	\centering
+		\begin{tabular}{|>{\small}l|>{\small}c|>{\small}p{4cm}|>{\small}c|>{\small}p{2cm}|}
+		\hline
+			\textbf{Proses\slash \textit{Task}} & 		\textbf{Tahap} & \textbf{\textit{Deliverables}} & \textbf{Jadwal} & \textbf{Kebutuhan Sumber Daya}\\
+		\hline
+			\multicolumn{5}{|>{\small}c|}{\textbf{\textit{Synthespian}}}\\
+		\hline
+			\textit{Modeling} & I & Model 3D kepala - torso lengkap dengan \textit{skeleton}-nya & 01/10/09 - 31/10/09 & 1 orang\\
+		\hline
+			Animasi dasar & I & Animasi-animasi dasar dari \textit{synthespian} & 02/11/09 - 28/11/09 & 1 orang\\
+		\hline
+			\textit{Real-time rendering} & I & Menampilkan \textit{synthespian} dalam \textit{engine} & 02/11/09 - 28/11/09 & 1 orang\\
+		\hline
+			Animasi kepribadian & II & Animasi berdasarkan sensor-sensor & 01/12/09 - 13/02/10 & 1 orang\\
+		\hline
+			Animasi vokal & II & Animasi vokal untuk berbicara & 16/02/10 - 30/04/10 & 1 orang\\
+		\hline
+			\multicolumn{5}{|>{\small}c|}{\textbf{Sensor dan Suara}}\\
+		\hline
+	Sensor penglihatan & II & Modul FaceDetector untuk mengenali wajah pengguna & 01/12/09 - 30/04/10 & 1 orang\\
+		\hline
+			Suara & II & Modul SpeechSynthesiser menyuarakan keluaran teks & 01/12/09 - 15/01/10 & 1 orang\\
+		\hline
+			Sensor pendengaran & II & Modul SpeechRecogniser mengenali perintah suara & 15/01/10 - 30/04/10 & 1 orang\\
+		\hline
+			\multicolumn{5}{|>{\small}c|}{\textbf{Antarmuka \textit{Soft Machine}}}\\
+		\hline
+			\textit{User Interface} & II & UI dengan \textit{soft control} & 01/02/10 - 27/02/10 & 1 orang\\
+		\hline
+			Layar & II & Layar multi-sentuh dengan 		\textit{holoscreen} & 01/03/10 - 30/04/10 & 1 orang\\
+		\hline
+			\multicolumn{5}{|>{\small}c|}{\textbf{\textit{Server}}}\\
+		\hline
+			\textit{Chatterbot} & I & Dapat menanggapi obrolan teks & 01/02/10 - 28/02/10 & 1 orang\\
+		\hline
+			Asisten & II & Dapat menanggapi tugas sebagai asisten: jadwal, tugas, dan \textit{to do} & 01/03/10 - 30/04/10 & 1 orang\\
+		\hline
+			\multicolumn{5}{|>{\small}c|}{\textbf{\textit{Client/Server}}}\\
+		\hline
+			\textit{Client-Server Dev.} & III & \textit{Client/server} untuk masing-masing terminal & 03/05/10 - 30/06/10 & 1 orang\\
+		\hline
+			\multicolumn{5}{|>{\small}c|}{\textbf{\textit{Finishing}}}\\
+		\hline
+			\textit{Bug fixing} & III & Pencarian \textit{bug} dan penyempurnaan produk & 03/05/10 - 30/06/10 & 1 orang\\
+		\hline
+	\end{tabular}
+	\caption{Tugas dan jadwal pengembangan PUSPA}
+	\label{tab:DevTime}
+\end{table}

@@ -1,0 +1,118 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{3. \textit{PROGRAMMING PROCEDURE}}}}
+\addcontentsline{toc}{subsection}{3. \textit{PROGRAMMING PROCEDURE}}
+
+
+\subsubsection*{ServerSocket  \& ClientSocket}
+
+Kode utama yang tercakup dalam modul ServerSocket dan ClientSocket masing-masing dapat ditemukan pada berkas \texttt{ServerSocket.cpp} dan \texttt{ClientSocket.cpp},
+yang masing-masingnya memiliki berkas \textit{header}.
+Untuk menguji modul-modul ini, telah disediakan juga masing-masing berkas \texttt{serversockettest.cpp} dan \texttt{clientsockettest.cpp}.
+Semua kode yang telah disebutkan di atas membutuhkan berkas \texttt{Errors.h} dan \texttt{Errors.cpp} dari direktori \texttt{common} karena sudah mengandung antisipasi terhadap galat.
+
+Pada tahap awal ini,
+sambungan yang dibangun masih dibatasi dengan satu \textit{client} saja setiap waktu saja (pada peubah \texttt{backLog}).
+
+Pertama, alamat dan port \textit{server} ditentukan pada kedua modul,
+informasi tentang alamatnya didapatkan melalui fungsi \texttt{getaddrinfo(2)},
+dan masing-masing modul membuat soket dengan fungsi \texttt{socket(2)}.
+Khusus untuk modul ServerSocket,
+soketnya dihubungkan dengan \textit{port} lokal yang telah ditentukan sebelumnya,
+dengan fungsi \texttt{bind(2)}.
+Soket ini akan menjadi soket sambungan.
+Setelah itu ServerSocket mulai mendengarkan dengan fungsi \texttt{listen(2)} sampai ada permintaan sambungan dari \textit{client}.
+ClientSocket akan meminta sambungan pada \textit{server} dengan fungsi \texttt{connect(2)},
+dan ServerSocket akan menerima permintaan tersebut dengan fungsi \texttt{accept(2)},
+dan mengerahkan soket baru untuk komunikasi.
+Setelah ini selesai, \textit{client} mulai dapat berkomunikasi dengan \textit{server},
+yang dilakukan melalui \textit{method} \texttt{receive} dan \texttt{send} pada tiap modul,
+yang masing-masingnya merupakan pembungkus dari fungsi \texttt{recv(2)} dan \texttt{send(2)}.
+
+Demi kejelasan,
+untuk meng-\textit{compile} kode yang dibutuhkan untuk pengujian modul ServerSocket,
+dari dalam direktori \texttt{server},
+perintah-perintah \textit{shell}-nya dapat dipaparkan sebagai berikut.
+\begin{enumerate}
+\item \verb!g++ -I../common -c ../common/Errors.cpp!
+\item \verb!g++ -I../common -c ServerSocket.cpp!
+\item \verb!g++ -I../common -c serversockettest.cpp!
+\end{enumerate}
+Dari sini, ada 3 berkas objek yang dihasilkan,
+yaitu \texttt{Errors.o}, \texttt{ServerSocket.o}, dan \texttt{serversockettest.o}.
+
+Begitu juga dengan modul ClientSocket,
+yang dari dalam direktori \texttt{client},
+perintah-perintah \textit{shell}-nya adalah
+\begin{enumerate}
+\item \verb!g++ -I../common -c ../common/Errors.cpp!
+\item \verb!g++ -I../common -c ClientSocket.cpp!
+\item \verb!g++ -I../common -c clientsockettest.cpp!
+\end{enumerate}
+yang menghasilkan \texttt{Errors.o}, \texttt{ClientSocket.o}, dan \texttt{clientsockettest.o}.
+
+Untuk me-\textit{link} berkas-berkas tersebut,
+perintah yang diketikkan adalah\\
+\verb!g++ Errors.o ServerSocket.o serversockettest.o -o serversocket!\\
+yang akan menghasilkan berkas \textit{executable} bernama \texttt{serversocket}, dan\\
+\verb!g++ Errors.o ClientSocket.o clientsockettest.o -o clientsocket!\\
+yang akan menghasilkan \texttt{clientsocket}.
+
+Sebuah Makefile (dan juga berkas proyek Xcode) disediakan untuk kenyamanan dalam melalui proses-proses di atas dengan sekali perintah.
+
+Untuk men-\textit{debug},
+perintah yang diketikkan adalah \verb!./serversocket! dalam direktori \texttt{server},
+dan \verb!./clientsocket! dalam direktori \texttt{client}.
+
+
+\subsubsection*{DialogueManager}
+\hyphenation{men-da-pat-kan di-mo-del-kan}
+
+Kode utama modul ini dapat ditemukan pada berkas \texttt{DialogueManager.cpp} beserta \textit{header}-nya.
+Modul ini berkaitan dengan pelaksanaan tugas,
+yang nantinya akan dilaksanakan oleh modul TaskManager.
+Karena pemenuhan prasyarat-prasyarat pelaksanaan tersebut terkandung dalam percakapan,
+pemodelan objek tugas dilakukan pada modul ini.
+Dalam pengujiannya, satu kelas tugas sudah tersedia, yaitu tugas membuat surel,
+yang kodenya ada pada berkas \texttt{Email.cpp} beserta \textit{header}-nya.
+Untuk menguji modul ini, telah disediakan juga berkas \texttt{dialoguemanagertest.cpp}.
+
+Pertama, masukan bagi modul ini yang berupa \textit{dialogue act} ditafsirkan untuk mendapatkan jenisnya dan makna yang terkandung dalam kalimatnya.
+Ada tiga dasar dalam menentukan jenis suatu \textit{dialogue act},
+yaitu tata bahasa, nada bicara, dan susunan percakapan.
+Bagaimanapun, pada tahap awal ini, hanya yang pertama yang sudah mulai diterapkan.
+Setelah jenis \textit{dialogue act} pengguna dilacak,
+modul ini berusaha untuk menentukan \textit{communicative goal} apa yang diinginkan untuk tercapai dalam percakapan yang sedang berlangsung.
+Dalam suatu percakapan, mungkin terdapat lebih daripada satu \textit{communicative goal},
+oleh karena itu hal ini dimodelkan dengan \textit{container} pada C++.
+Dalam tahap awal, jenis \textit{container} yang dipilih adalah \texttt{stack},
+dengan anggapan bahwa \textit{communicative goal} yang terakhir muncul harus dicapai sebelum \textit{communicative goal} yang muncul sebelumnya dapat tercapai.
+\textit{Communicative goal} tidak muncul pada setiap \textit{dialogue act},
+oleh karena itu modul ini harus melakukan pengolahan juga untuk menentukan apakah ada \textit{communicative goal} yang muncul atau tidak.
+Jika ada, maka \textit{communicative goal} tersebut akan ditambahkan ke tumpukan (\textit{stack}) \textit{communicative goals}.
+Setelah itu, modul ini akan mulai membuat \textit{dialogue act} tanggapannya,
+dengan membuat apa yang disebut sebagai \textit{adjacency pairs}.
+Modul ini akan menentukan jenis \textit{dialogue act} apa saja yang cocok dijadikan pasangan bagi jenis \textit{dialogue act} masukan dari pengguna,
+yang kemudian kemungkinannya dipersempit lagi dengan menggunakan \textit{information state} sebagai parameter.
+Di sinilah modul ini akan menentukan hal seperti apakah PUSPA harus menanyakan tentang suatu informasi kepada pengguna untuk dapat melaksanakan suatu tugas,
+dan juga akan melakukan hal-hal yang perlu seperti membuat \textit{instance} dari kelas yang berkaitan dengan tugas yang harus dilaksanakan tersebut (dalam pengujian ini, kelas \texttt{Email}).
+Setelah itulah baru modul ini dapat menentukan ``isi'' dari tanggapan yang akan dikeluarkan.
+
+Untuk meng-\textit{compile} kode yang dibutuhkan untuk pengujian modul DialogueManager,
+dari dalam direktori \texttt{server},
+perintah-perintah \textit{shell}-nya adalah
+\begin{enumerate}
+\item \verb!g++ -c Email.cpp!
+\item \verb!g++ -c DialogueManager.cpp!
+\item \verb!g++ -c dialoguemanagertest.cpp!
+\end{enumerate}
+yang menghasilkan \texttt{Email.o}, \texttt{DialogueManager.o}, dan \texttt{dialoguemanagertest.o}.
+
+Untuk me-\textit{link} berkas-berkas tersebut,
+perintah yang diketikkan adalah
+\begin{verbatim}
+g++ -lpcrecpp Email.o DialogueManager.o dialoguemanagertest.o \
+-o dialoguemanager
+\end{verbatim}
+yang akan menghasilkan \texttt{dialoguemanager}.
+
+Untuk men-\textit{debug},
+perintah yang diketikkan adalah \verb!./dialoguemanager! dalam direktori \texttt{server}.

@@ -1,0 +1,322 @@
+<aiml>
+
+<category>
+<pattern>APA * LSKK</pattern>
+	<template> LSKK adalah Lab Sistem Kendali dan Komputer</template>
+</category>
+
+<category>
+<pattern>APA LSKK</pattern>
+	<template> LSKK adalah Lab Sistem Kendali dan Komputer.</template>
+</category>
+
+<category>
+<pattern>APA * VISI LSKK</pattern>
+	<template> Untuk mengembangkan sumber dayanya untuk mencapai keunggulan akademik ITB dan untuk mewujudkan perannya sebagai agen nasional perubahan. </template>
+</category>
+
+<category>
+<pattern>APA VISI LSKK</pattern>
+	<template> Untuk mengembangkan sumber dayanya untuk mencapai keunggulan akademik ITB dan untuk mewujudkan perannya sebagai agen nasional perubahan.</template>
+</category>
+
+<category>
+<pattern>VISI LSKK * APA</pattern>
+	<template> Untuk mengembangkan sumber dayanya untuk mencapai keunggulan akademik ITB dan untuk mewujudkan perannya sebagai agen nasional perubahan.</template>
+</category>
+
+<category>
+<pattern>APA * MISI LSKK</pattern>
+	<template> Untuk membangun masyarakat akademik yang sejahtera, matang dalam intelektual dan emosional. Untuk membuat berpikir brilian dan unggul, pendidik
+peneliti, dengan keunggulan di kepemimpinan dan kewirausahaan.juga untuk menciptakan insinyur yang memiliki nilai tambah tenaga kerja.</template>
+</category>
+
+<category>
+<pattern>APA MISI LSKK</pattern>
+	<template> Untuk membangun masyarakat akademik yang sejahtera, matang dalam intelektual dan emosional. Untuk membuat berpikir brilian dan unggul, pendidik, peneliti, dengan keunggulan di
+  kepemimpinan dan kewirausahaan, juga untuk menciptakan insinyur yang memiliki nilai tambah tenaga kerja.</template>
+</category>
+
+<category>
+<pattern>MISI LSKK * APA</pattern>
+	<template> Untuk membangun masyarakat akademik yang sejahtera, matang dalam intelektual dan emosional. Untuk membuat berpikir brilian dan unggul, pendidik, peneliti, dengan keunggulan di
+  kepemimpinan dan kewirausahaan juga untuk menciptakan insinyur yang memiliki nilai tambah tenaga kerja.</template>
+</category>
+
+<category>
+<pattern>APA * RESPONSIBILITAS LSKK</pattern>
+	<template> Untuk mengkoordinasikan kegiatan pendidikan untuk sarjana dan program pasca sarjana, penelitian dan kegiatan pemberdayaan masyarakat. Untuk meningkatkan dan mengembangkan ilmu pengetahuan dan teknologi dalam bidang Teknik Kontrol.
+  Untuk mengembangkan sumber daya manusia untuk menjadi kompeten di bidang Teknik Kontrol.</template>
+</category>
+
+<category>
+<pattern>APA RESPONSIBILITAS LSKK</pattern>
+	<template> Untuk mengkoordinasikan kegiatan pendidikan untuk sarjana dan program pasca sarjana, penelitian dan kegiatan pemberdayaan masyarakat. Untuk meningkatkan dan mengembangkan ilmu pengetahuan dan teknologi dalam bidang Teknik Kontrol.
+  Untuk mengembangkan sumber daya manusia untuk menjadi kompeten di bidang Teknik Kontrol.</template>
+</category>
+
+<category>
+<pattern>RESPONSIBILITAS LSKK * APA</pattern>
+	<template> Untuk mengkoordinasikan kegiatan pendidikan untuk sarjana dan program pasca sarjana, penelitian dan kegiatan pemberdayaan masyarakat. Untuk meningkatkan dan mengembangkan ilmu pengetahuan dan teknologi dalam bidang Teknik Kontrol.
+  Untuk mengembangkan sumber daya manusia untuk menjadi kompeten di bidang Teknik Kontrol.</template>
+</category>
+
+<category>
+<pattern>APA * TARGET LSKK </pattern>
+	<template> Untuk menjadi bagian strategis dari ITB dalam mencapai misi dan visinya. Untuk menjadi pusat pengembangan sumber daya manusia yang sangat kompeten.
+  Untuk membangun lingkungan kerja yang baik dan harmonis. Untuk mengembangkan rencana terpadu dan berkelanjutan jangka pendek dan jangka panjang.</template>
+</category>
+
+<category>
+<pattern>APA TARGET LSKK</pattern>
+		<template> Untuk menjadi bagian strategis dari ITB dalam mencapai misi dan visinya. Untuk menjadi pusat pengembangan sumber daya manusia yang sangat kompeten.
+  Untuk membangun lingkungan kerja yang baik dan harmonis. Untuk mengembangkan rencana terpadu dan berkelanjutan jangka pendek dan jangka panjang.</template>
+</category>
+
+<category>
+<pattern>TARGET LSKK * APA</pattern>
+		<template> Untuk menjadi bagian strategis dari ITB dalam mencapai misi dan visinya. Untuk menjadi pusat pengembangan sumber daya manusia yang sangat kompeten.
+  Untuk membangun lingkungan kerja yang baik dan harmonis. Untuk mengembangkan rencana terpadu dan berkelanjutan jangka pendek dan jangka panjang.</template>
+</category>
+
+<category>
+<pattern>APA * AKTIVITAS PENDIDIKAN DI LSKK</pattern>
+	<template> Aktivitas pendidikan di  LSKK adalah Program Sarjana di Teknik Elektro, Program Master di Control dan Intelligent Systems,Program Master di Digital Media dan Game Technology, Program Doktor di Teknik Elektro dan Informatika, Serta Penelitian Kolaborasi.</template>
+</category>
+
+<category>
+<pattern>APA SAJA AKTIVITAS PENDIDIKAN DI LSKK</pattern>
+	<template> Aktivitas pendidikan di  LSKK adalah Program Sarjana di Teknik Elektro, Program Master di Control dan Intelligent Systems,Program Master di Digital Media dan Game Technology, Program Doktor di Teknik Elektro dan Informatika, Serta Penelitian Kolaborasi.</template>
+</category>
+
+<category>
+<pattern>AKTIVITAS PENDIDIKAN DI LSKK * APA</pattern>
+	<template> Aktivitas pendidikan di  LSKK adalah Program Sarjana di Teknik Elektro, Program Master di Control dan Intelligent Systems,Program Master di Digital Media dan Game Technology, Program Doktor di Teknik Elektro dan Informatika, Serta Penelitian Kolaborasi.</template>
+</category>
+
+<category>
+<pattern>APA * AKTIVITAS PENELITIAN DI LSKK</pattern>
+	<template> Aktivitas penelitian di LSKK adalah Control system methodology, Embedded control system, Robotics, Hibrid and Swiching control, dan Control and Intelligent systems.</template>
+</category>
+
+<category>
+<pattern>APA AKTIVITAS PENDIDIKAN DI LSKK</pattern>
+		<template> Aktivitas penelitian di LSKK adalah Control system methodology, Embedded control system, Robotics, Hibrid and Swiching control, dan Control and Intelligent systems.</template>
+</category>
+
+<category>
+<pattern>AKTIVITAS PENELITIAN DI LSKK * APA</pattern>
+		<template> Aktivitas penelitian di LSKK adalah Control system methodology, Embedded control system, Robotics, Hibrid and Swiching control, dan Control and Intelligent systems.</template>
+</category>
+
+<category>
+<pattern>APA * PELAYANAN MASYARAKAT DI LSKK</pattern>
+	<template> Pelayanan masyarakat yang dilakukan di LSKK adalah Community Interaction, dan Industrial/Product.</template>
+</category>
+
+<category>
+<pattern>APA SAJA PELAYANAN MASYARAKAT DI LSKK</pattern>
+	<template> Pelayanan masyarakat yang dilakukan di LSKK adalah Community Interaction, dan Industrial/Product.</template>
+</category>
+
+<category>
+<pattern>PELAYANAN MASYARAKAT DI LSKK * APA</pattern>
+	<template> Pelayanan masyarakat yang dilakukan di LSKK adalah Community Interaction, dan Industrial/Product.</template>
+</category>
+
+<category>
+<pattern>SIAPA * HILWADI HINDERSAH</pattern>
+	<template> Pak Hilwadi Hindersyah adalah kepala bagian Adaptive Control dan Robotic.</template>
+</category>
+
+<category>
+<pattern>SIAPA HILWADI HINDERSAH</pattern>
+	<template> Pak Hilwadi Hindersyah adalah kepala bagian Adaptive Control dan Robotic.</template>
+</category>
+
+<category>
+<pattern>HILWADI HINDERSYAH * SIAPA</pattern>
+	<template> Pak Hilwadi Hindersyah adalah kepala bagian Adaptive Control dan Robotic.</template>
+</category>
+
+<category>
+<pattern>SIAPA * ARY SETIJADI PRIHATMANTO</pattern>
+	<template> Pak Ary Setijadi Prihatmanto adalah kepala bagian Virtual Reality dan Computer Graphics serta Game Design dan Developer.</template>
+</category>
+
+<category>
+<pattern>SIAPA ARY SETIJADI PRIHATMANTO</pattern>
+	<template> Pak Ary Setijadi Prihatmanto adalah kepala bagian Virtual Reality dan Computer Graphics serta Game Design dan Developer.</template>
+</category>
+
+<category>
+<pattern>ARY SETIJADI PRIHATMANTO * SIAPA</pattern>
+	<template> Pak Ary Setijadi Prihatmanto adalah kepala bagian Virtual Reality dan Computer Graphics serta Game Design dan Developer.</template>
+</category>
+
+<category>
+<pattern>SIAPA * AGUNG HARSOYO</pattern>
+	<template> Pak Agung Harsoyo adalah kepala bagian Signal Processing, Mobile Computing dan Sensor Network.</template>
+</category>
+
+<category>
+<pattern>SIAPA AGUNG HARSOYO</pattern>
+	<template> Pak Agung Harsoyo adalah kepala bagian Signal Processing, Mobile Computing dan Sensor Network.</template>
+</category>
+
+<category>
+<pattern>AGUNG HARSOYO * SIAPA</pattern>
+	<template> Pak Agung Harsoyo adalah kepala bagian Signal Processing, Mobile Computing dan Sensor Network.</template>
+</category>
+
+<category>
+<pattern>SIAPA * BAMBANG RIYANTO</pattern>
+	<template> Pak Bambang Riyanto adalah kepala bagian Robust control, Intelligent control, Discrete event system, Control aplications dan Telerobotics.</template>
+</category>
+
+<category>
+<pattern>SIAPA BAMBANG RIYANTO</pattern>
+	<template> Pak Bambang Riyanto adalah kepala bagian Robust control, Intelligent control, Discrete event system, Control aplications dan Telerobotics.</template>
+</category>
+
+<category>
+<pattern>BAMBANG RIYANTO * SIAPA</pattern>
+	<template> Pak Bambang Riyanto adalah kepala bagian Robust control, Intelligent control, Discrete event system, Control aplications dan Telerobotics.</template>
+</category>
+
+<category>
+<pattern>SIAPA * CARMADI MACHBUB</pattern>
+	<template> Pak Carmadi Machbub adalah kepala bagian Stochastic control, Image based control, Mobile Robot, Distributed parameter system dan Optimization.</template>
+</category>
+
+<category>
+<pattern>SIAPA CARMADI MACHBUB</pattern>
+	<template> Pak Carmadi Machbub adalah kepala bagian Stochastic control, Image based control, Mobile Robot, Distributed parameter system dan Optimization.</template>
+</category>
+
+<category>
+<pattern>CARMADI MACHBUB * SIAPA</pattern>
+	<template> Pak Carmadi Machbub adalah kepala bagian Stochastic control, Image based control, Mobile Robot, Distributed parameter system dan Optimization.</template>
+</category>
+
+<category>
+<pattern>SIAPA * DIMITRI MAHAYANA</pattern>
+	<template> Pak Dimitri Mahayana adalah kepala bagian Nonlinear control, Signal dan Systems, Futurolog study.</template>
+</category>
+
+<category>
+<pattern>SIAPA DIMITRI MAHAYANA</pattern>
+	<template> Pak Dimitri Mahayana adalah kepala bagian Nonlinear control, Signal dan Systems, Futurolog study.</template>
+</category>
+
+<category>
+<pattern>DIMITRI MAHAYANA * SIAPA</pattern>
+	<template> Pak Dimitri Mahayana adalah kepala bagian Nonlinear control, Signal dan Systems, Futurolog study.</template>
+</category>
+
+<category>
+<pattern>SIAPA * IYAS MUNAWAR</pattern>
+	<template> Pak Iyas Munawar adalah kepala bagian Digital control, Multivariable control, Control system instrumentation, Mecatronics, Control of electrical machine, dan Hybrid system.</template>
+</category>
+
+<category>
+<pattern>SIAPA IYAS MUNAWAR</pattern>
+	<template> Pak Iyas Munawar adalah kepala bagian Digital control, Multivariable control, Control system instrumentation, Mecatronics, Control of electrical machine, dan Hybrid system.</template>
+</category>
+
+<category>
+<pattern>IYAS MUNAWAR * SIAPA</pattern>
+	<template> Pak Iyas Munawar adalah kepala bagian Digital control, Multivariable control, Control system instrumentation, Mecatronics, Control of electrical machine, dan Hybrid system.</template>
+</category>
+
+<category>
+<pattern>SIAPA * PRANOTO HUDAYA</pattern>
+	<template> Pak Pranoto Hudaya adalah kepala bagian Control implementation, Computer control system, dan Embedded systems.</template>
+</category>
+
+<category>
+<pattern>SIAPA PRANOTO HUDAYA</pattern>
+	<template> Pak Pranoto Hudaya adalah kepala bagian Control implementation, Computer control system, dan Embedded systems.</template>
+</category>
+
+<category>
+<pattern>PRANOTO HUDAYA * SIAPA</pattern>
+	<template> Pak Pranoto Hudaya adalah kepala bagian Control implementation, Computer control system, dan Embedded systems.</template>
+</category>
+
+<category>
+<pattern>SIAPA * ACIEK IDA W</pattern>
+	<template> Ibu Aciek Ida W adalah kepala bagian Java programming, Interacative learning, dan Control design.</template>
+</category>
+
+<category>
+<pattern>SIAPA ACIEK IDA W</pattern>
+	<template> Ibu Aciek Ida W adalah kepala bagian Java programming, Interacative learning, dan Control design.</template>
+</category>
+
+<category>
+<pattern>ACIEK IDA W * SIAPA</pattern>
+	<template> Ibu Aciek Ida W adalah kepala bagian Java programming, Interacative learning, dan Control design.</template>
+</category>
+
+<category>
+<pattern>SIAPA * ARIEF SAICHU ROHMAN</pattern>
+	<template> Pak Arief Saichu Rohman adalah kepala bagian Interactive learning, Plant Modelling dan Simulation, System Intelligent.</template>
+</category>
+
+<category>
+<pattern>SIAPA ARIEF SAICHU ROHMAN</pattern>
+	<template> Pak Arief Saichu Rohman adalah kepala bagian Interactive learning, Plant Modelling dan Simulation, System Intelligent.</template>
+</category>
+
+<category>
+<pattern>ARIEF SAICHU ROHMAN * SIAPA</pattern>
+	<template> Pak Arief Saichu Rohman adalah kepala bagian Interactive learning, Plant Modelling dan Simulation, System Intelligent.</template>
+</category>
+
+<category>
+<pattern>SIAPA * TUNGGAL MARDIONO</pattern>
+	<template> Pak Tunggal Mardiono adalah System Theory, Stochastic Process, Power System Control, dan Optimization.</template>
+</category>
+
+<category>
+<pattern>SIAPA TUNGGAL MARDIONO</pattern>
+	<template> Pak Tunggal Mardiono adalah System Theory, Stochastic Process, Power System Control, dan Optimization.</template>
+</category>
+
+<category>
+<pattern>TUNGGAL MARDIONO * SIAPA</pattern>
+	<template> Pak Tunggal Mardiono adalah System Theory, Stochastic Process, Power System Control, dan Optimization.</template>
+</category>
+
+<category>
+<pattern>SIAPA * KUSPRIYANTO</pattern>
+	<template> Pak Kuspriyanto adalah kepala bagian Computer system, Computer architecture, Robotics, Real Time, Systems dan Control.</template>
+</category>
+
+<category>
+<pattern>SIAPA KUSPRIYANTO</pattern>
+	<template> Pak Kuspriyanto adalah kepala bagian Computer system, Computer architecture, Robotics, Real Time, Systems dan Control.</template>
+</category>
+
+<category>
+<pattern>KUSPRIYANTO * SIAPA</pattern>
+	<template> Pak Kuspriyanto adalah kepala bagian Computer system, Computer architecture, Robotics,  Real Time, Systems dan Control.</template>
+</category>
+
+<category>
+<pattern>SIAPA * YOGA PRIYANA</pattern>
+	<template> Pak Yoga Priyana adalah kepala bagian Petri nets,Programmable control, Discrete event system, Computer control, Computer system dan Hybrid System.</template>
+</category>
+
+<category>
+<pattern>SIAPA YOGA PRIYANA</pattern>
+	<template> Pak Yoga Priyana adalah kepala bagian Petri nets, Programmable control, Discrete event system, Computer control, Computer system dan Hybrid System.</template>
+</category>
+
+<category>
+<pattern>YOGA PRIYANA * SIAPA</pattern>
+	<template> Pak Yoga Priyana adalah kepala bagian Petri nets, Programmable control, Discrete event system, Computer control, Computer system dan Hybrid System.</template>
+</category>
+
+</aiml>

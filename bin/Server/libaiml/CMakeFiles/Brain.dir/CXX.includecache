@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Common/Errors.h
+string
+-
+
+/home/inspiration/samson/puspa/Server/libaiml/Brain.cc
+cstdlib
+-
+iostream
+-
+std_utils/std_util.h
+-
+Errors.h
+/home/inspiration/samson/puspa/Server/libaiml/Errors.h
+Brain.h
+/home/inspiration/samson/puspa/Server/libaiml/Brain.h
+
+/home/inspiration/samson/puspa/Server/libaiml/Brain.h
+string
+-
+libaiml/aiml.h
+-
+
+/usr/local/include/libaiml/aiml.h
+string
+-
+list
+-
+errors.h
+/usr/local/include/libaiml/errors.h
+
+/usr/local/include/libaiml/errors.h
+
+/usr/local/include/std_utils/std_util.h
+string
+-
+sstream
+-
+

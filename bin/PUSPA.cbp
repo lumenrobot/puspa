@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="PUSPA" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\Common\;CMake Files\Server\;CMake Files\Server\libaiml\;CMake Files\Server\AIML\;CMake Files\Server\Socket\;CMake Files\Client\;CMake Files\Client\Socket\;CMake Files\Client\eSpeak\;CMake Files\Client\Julius\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/inspiration/samson/puspa/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/inspiration/samson/puspa/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/home/inspiration/samson/puspa/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; install" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/home/inspiration/samson/puspa/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/home/inspiration/samson/puspa/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/home/inspiration/samson/puspa/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/inspiration/samson/puspa/bin" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Errors">
+         <Option output="/home/inspiration/samson/puspa/bin/Common/libErrors.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Common" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Common/Makefile&quot; Errors" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Common/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Common/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Common/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Errors/fast">
+         <Option output="/home/inspiration/samson/puspa/bin/Common/libErrors.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Common" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Common/Makefile&quot; Errors/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Common/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Common/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Common/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="puspad">
+         <Option output="/home/inspiration/samson/puspa/bin/Server/puspad" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Server" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Server/libaiml" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Server/Socket" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Makefile&quot; puspad" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="puspad/fast">
+         <Option output="/home/inspiration/samson/puspa/bin/Server/puspad" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Server" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Server/libaiml" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Server/Socket" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Makefile&quot; puspad/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Brain">
+         <Option output="/home/inspiration/samson/puspa/bin/Server/libaiml/libBrain.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Server/libaiml" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/libaiml/Makefile&quot; Brain" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/libaiml/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/libaiml/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/libaiml/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Brain/fast">
+         <Option output="/home/inspiration/samson/puspa/bin/Server/libaiml/libBrain.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Server/libaiml" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/libaiml/Makefile&quot; Brain/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/libaiml/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/libaiml/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/libaiml/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ServerSocket">
+         <Option output="/home/inspiration/samson/puspa/bin/Server/Socket/libServerSocket.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Server/Socket" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Server/libaiml" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Server/Socket" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Socket/Makefile&quot; ServerSocket" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Socket/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Socket/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Socket/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ServerSocket/fast">
+         <Option output="/home/inspiration/samson/puspa/bin/Server/Socket/libServerSocket.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Server/Socket" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Server/libaiml" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Server/Socket" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Socket/Makefile&quot; ServerSocket/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Socket/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Socket/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Server/Socket/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="PUSPA">
+         <Option output="/home/inspiration/samson/puspa/bin/Client/PUSPA" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Client" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Client/Socket" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Client/default" />
+            <Add directory="/home/inspiration/samson/puspa/Client/eSpeak" />
+            <Add directory="/home/inspiration/samson/puspa/Client/Julius" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Makefile&quot; PUSPA" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="PUSPA/fast">
+         <Option output="/home/inspiration/samson/puspa/bin/Client/PUSPA" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Client" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Client/Socket" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Client/default" />
+            <Add directory="/home/inspiration/samson/puspa/Client/eSpeak" />
+            <Add directory="/home/inspiration/samson/puspa/Client/Julius" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Makefile&quot; PUSPA/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ClientSocket">
+         <Option output="/home/inspiration/samson/puspa/bin/Client/Socket/libClientSocket.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Client/Socket" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Client/Socket" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Socket/Makefile&quot; ClientSocket" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Socket/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Socket/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Socket/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ClientSocket/fast">
+         <Option output="/home/inspiration/samson/puspa/bin/Client/Socket/libClientSocket.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Client/Socket" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Client/Socket" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Socket/Makefile&quot; ClientSocket/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Socket/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Socket/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Socket/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Mouth">
+         <Option output="/home/inspiration/samson/puspa/bin/Client/eSpeak/libMouth.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Client/eSpeak" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Client/Socket" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Client/default" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/eSpeak/Makefile&quot; Mouth" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/eSpeak/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/eSpeak/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/eSpeak/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Mouth/fast">
+         <Option output="/home/inspiration/samson/puspa/bin/Client/eSpeak/libMouth.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Client/eSpeak" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Client/Socket" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Client/default" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/eSpeak/Makefile&quot; Mouth/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/eSpeak/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/eSpeak/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/eSpeak/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Ear">
+         <Option output="/home/inspiration/samson/puspa/bin/Client/Julius/libEar.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Client/Julius" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Client/Socket" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Client/default" />
+            <Add directory="/home/inspiration/samson/puspa/Client" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Julius/Makefile&quot; Ear" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Julius/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Julius/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Julius/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="Ear/fast">
+         <Option output="/home/inspiration/samson/puspa/bin/Client/Julius/libEar.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/inspiration/samson/puspa/bin/Client/Julius" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/inspiration/samson/puspa/Client/Socket" />
+            <Add directory="/home/inspiration/samson/puspa/Common" />
+            <Add directory="/home/inspiration/samson/puspa/Client/default" />
+            <Add directory="/home/inspiration/samson/puspa/Client" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Julius/Makefile&quot; Ear/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Julius/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Julius/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/inspiration/samson/puspa/bin/Client/Julius/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Agent.cc">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Julius/Ear.c">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Socket/ClientSocket.cc">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/compiledict.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/dictionary.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/intonation.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/klatt.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/mbrowrap.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/numbers.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/phonemelist.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/readclause.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/setlengths.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/speak.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/synth_mbrola.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/synthdata.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/synthesize.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/tr_languages.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/translate.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/voices.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/wavegen.cpp">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/main.cc">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Common/Errors.cc">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/Socket/ServerSocket.cc">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/libaiml/Brain.cc">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/main.cc">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Agent.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Julius/Ear.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Socket/ClientSocket.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Socket/SocketConfig.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/Mouth.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/StdAfx.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/klatt.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/mbrowrap.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/phoneme.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/sintab.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/speak_lib.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/speech.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/synthesize.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/translate.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/voice.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/wave.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Common/Errors.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/Socket/ServerSocket.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/libaiml/Brain.h">
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Common/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Common\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Server\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/libaiml/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Server\libaiml\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/AIML/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Server\AIML\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Server/Socket/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Server\Socket\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Client\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Socket/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Client\Socket\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/eSpeak/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Client\eSpeak\" />
+      </Unit>
+      <Unit filename="/home/inspiration/samson/puspa/Client/Julius/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Client\Julius\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,17 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{1. \textit{INTRODUCTION}}}}
+\addcontentsline{toc}{subsection}{1. \textit{INTRODUCTION}}
+
+\subsubsection*{ServerSocket \& ClientSocket}
+Sebagai percobaan dalam pengembangan tahap awal,
+penerapan modul ini mengacu pada program \href{http://beej.us/guide/bgnet/output/html/multipage/clientserver.html}{\textit{stream server} dan \textit{stream client} sederhana pada Hall (2009)},
+hanya saja disesuaikan dengan kebiasaan umum pada pemrograman C++.
+Secara umum, modul ini berangkat dari sini.
+Rencananya, selangkah demi selangkah modul-modul ini akan dilengkapi supaya dapat mewujudkan fitur-fitur yang merupakan bagian dari perancangan PUSPA,
+contohnya seperti teknik \textit{synchronous I/O multiplexing}.
+
+\subsubsection*{DialogueManager}
+Modul ini merupakan usaha menerapkan \textit{information-state dialogue manager} yang dijelaskan pada Jurafsky \& Martin (2009).
+\textit{Dialogue manager} seperti ini diharapkan dapat mengetahui apakah penggunanya sedang bertanya, sedang menyuruh, atau sebagainya.
+\textit{Information state}-nya kemudian diperbaharui selagi \textit{dialogue act} pengguna ditafsirkan,
+dan \textit{information state} tersebut kemudian akan menjadi parameter dalam menghasilkan \textit{dialogue act} tanggapan.
+Beberapa hal yang termasuk dalam \textit{information state} ini mencakup \textit{communicative goal}, \textit{user model}, dan lain-lain.

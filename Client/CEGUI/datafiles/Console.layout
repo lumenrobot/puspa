@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<GUILayout>
+<Window Type="TaharezLook/FrameWindow" Name="TaharezLook/Console">
+<Property Name="UnifiedMinSize" Value="{{0.2,0},{0.2,0}}" />
+<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+<Property Name="TitlebarEnabled" Value="False" />
+<Property Name="CloseButtonEnabled" Value="False" />
+<Window Type="TaharezLook/Editbox" Name="TaharezLook/Console/Editbox">
+<Property Name="ID" Value="1" />
+<Property Name="VerticalAlignment" Value="Bottom" />
+<Property Name="UnifiedMinSize" Value="{{0.2,0},{0.2,0}}" />
+<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+<Property Name="Text" Value="" />
+</Window>
+</Window>
+</GUILayout>

@@ -1,0 +1,33 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{1. \textit{INTRODUCTION}}}}
+\addcontentsline{toc}{subsection}{1. \textit{INTRODUCTION}}
+
+
+Secara umum, perangkat lunak PUSPA dapat dibagi menjadi dua subsistem,
+yaitu \textit{server} dan \textit{client}.
+Secara khusus, perangkat lunak PUSPA dibagi menjadi modul-modul,
+dengan fungsi-fungsinya yang ditunjukkan pada Tabel \ref{FungsiPerangkatLunak}.
+
+\begin{table}
+	\centering
+		\begin{tabular}{|p{1.8cm}|p{4.7cm}|p{8cm}|}
+			\hline
+				Subsistem & Modul & Keterangan\\
+			\hline
+				\textit{Server} & NaturalLanguageAnalyser & mengolah bahasa alami\\
+				& NaturalLanguageGenerator & membuat kalimat dari tanggapannya\\
+				& DialogueManager & membuat tanggapan dan mengatur arah pembicaraan\\
+				& TaskManager & melaksanakan tugas\\
+				& KnowledgeBase & berperan sebagai pengetahuan PUSPA\\
+				& ServerSocket & membuka \textit{port} dan melakukan komunikasi dengan \textit{client}\\
+			\hline
+				\textit{Client} & Synthespian & model 3D yang berinteraksi dengan pengguna\\
+				& UserInterface & menampilkan \textit{user interface} dan interaksinya\\
+				& SpeechSynthesiser & melakukan proses TextToSpeech\\
+				& FaceDetector & melakukan proses pengenalan wajah dan \textit{tracking}\\
+				& SpeechRecogniser & melakukan pengenalan suara (SpeechToText)\\
+				& ClientSocket & melakukan komunikasi dengan \textit{server}\\			
+			\hline
+		\end{tabular}
+\caption{Modul-modul dalam PUSPA}
+\label{FungsiPerangkatLunak}
+\end{table}

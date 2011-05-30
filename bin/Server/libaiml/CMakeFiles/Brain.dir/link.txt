@@ -1,0 +1,2 @@
+/usr/bin/ar cr libBrain.a  CMakeFiles/Brain.dir/Brain.cc.o
+/usr/bin/ranlib libBrain.a

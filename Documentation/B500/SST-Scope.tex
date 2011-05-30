@@ -1,0 +1,52 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{1. \textit{SCOPE}}}}
+\addcontentsline{toc}{subsection}{1. \textit{SCOPE}}
+
+\subsubsection*{\textit{Server}}
+Lingkup fungsional subsistem \textit{server} mencakup:
+\begin{enumerate}
+\item membuka layanan TCP/IP pada \textit{port} tertentu, dan menyiapkan diri untuk menerima masukan yang dikirim oleh subsistem \textit{client},
+%\item menganalisa susunan karakter-karakter UTF-8 menjadi bentuk perwakilan yang dimengerti oleh sistem,
+\item mengolah masukan bentuk perwakilan tersebut untuk menghasilkan tanggapan yang akan membuat hubungan masukan dan keluarannya menjadi seperti percakapan,
+\item memenuhi prasyarat-prasyarat pelaksanaan tugas apabila terdapat unsur permintaan dalam masukan yang diberikan oleh pengguna,
+%\item menghasilkan tanggapan sehingga menjadi bentuk yang dimengerti pengguna,
+\item dan mengirimkan keluarannya ke subsistem \textit{client}.
+\end{enumerate}
+Lingkup kinerja subsistem \textit{server} mencakup:
+\begin{enumerate}
+\item keluwesan komunikasi dengan subsistem \textit{client}, %lebih daripada satu,
+%\item kemapanan dan ketepatan dalam menganalisa masukan,
+\item dan baiknya penerapan algoritma dalam menyimulasikan percakapan.
+%\item terlaksananya tugas yang diberikan,
+%\item dan mutu dari hasil akhir yang dikeluarkan.
+\end{enumerate}
+Lingkup perancangan subsistem \textit{server} mencakup:
+\begin{enumerate}
+\item penentuan algoritma yang berpengaruh pada ciri-ciri percakapan yang disimulasikan,
+\item dan penentuan arsitektur agen percakapan yang diterapkan.
+\end{enumerate}
+
+\subsubsection*{\textit{Client}}
+Lingkup fungsional subsistem \textit{client} mencakup:
+\begin{enumerate}
+\item membentuk sambungan dengan subsistem \textit{server},
+\item menyiapkan diri untuk mendengarkan apa yang mungkin akan diucapkan oleh pengguna,
+%\item menampilkan wajah PUSPA,
+%\item mengenali pengguna,
+\item mengirimkan apa yang diucapkan oleh pengguna dalam bentuk karakter-karakter UTF-8 ke subsistem \textit{server},
+\item menerima karakter-karakter UTF-8 yang dikembalikan oleh subsistem,
+\item mengeluarkan suara pengucapan dari susunan karakter-karakter tersebut,
+\item dan menampilkan sejarah percakapan.
+%\item dan melakukan animasi yang menyimulasikan gerakan wajah manusia.
+\end{enumerate}
+Lingkup kinerja subsistem \textit{client} mencakup:
+\begin{enumerate}
+\item keluwesan komunikasi dengan subsistem \textit{server},
+%\item baiknya pengenalan wajah pengguna,
+\item baiknya pengenalan ucapan pengguna,
+\item dan kejelasan pengucapan teks.
+%\item dan kemiripan penggambaran gerakan wajah.
+\end{enumerate}
+Lingkup perancangan subsistem \textit{client} mencakup:
+\begin{enumerate}
+\item pemilihan alat pendukung yang mempengaruhi perancangan sistem secara keseluruhan.
+\end{enumerate}

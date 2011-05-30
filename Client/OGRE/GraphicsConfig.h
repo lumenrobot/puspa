@@ -1,0 +1,6 @@
+#ifndef GRAPHICS_CONFIG_H
+#define GRAPHICS_CONFIG_H
+
+#define GRAPHICS_ENGINE_OGRE
+
+#endif

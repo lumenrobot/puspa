@@ -1,0 +1,2 @@
+/usr/bin/ar cr libErrors.a  CMakeFiles/Errors.dir/Errors.cc.o
+/usr/bin/ranlib libErrors.a

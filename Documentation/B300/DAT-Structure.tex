@@ -1,0 +1,17 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{3. \textit{DATA STRUCTURE}}}}
+\addcontentsline{toc}{subsection}{3. \textit{DATA STRUCTURE}}
+
+\subsubsection*{\texttt{Email}}
+
+Peubah-peubah dalam \texttt{Email} diberi nilai awal \texttt{string} kosong,
+dengan \textit{constructor} berikut.
+\begin{verbatim}
+Email()
+ : senderAddr(""), recipientAddr(""), subject(""), content("")
+{
+}
+\end{verbatim}
+
+Untuk kelas ini, ada \textit{method} \verb!string nextFieldToFill();!,
+yang penggunaannya berkaitan dengan PUSPA menanyakan satu-satu nilai bagi tiap peubah yang masih kosong kepada pengguna.
+Nilai-nilai itu kemudian dituliskan ke peubah-peubahnya dengan \textit{method} \verb!bool fillNextField(string fillingString);!.

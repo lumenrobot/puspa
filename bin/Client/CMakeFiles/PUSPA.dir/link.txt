@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/PUSPA.dir/main.cc.o CMakeFiles/PUSPA.dir/Agent.cc.o  -o PUSPA -rdynamic eSpeak/libMouth.a Julius/libEar.a Socket/libClientSocket.a -lportaudio -lasound -lesd -ljulius -lpulse-simple -lsent -lsndfile -lz ../Common/libErrors.a 

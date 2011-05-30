@@ -1,0 +1,20 @@
+\subsection*{\textcolor{subsectioncolor}{\textsf{4. \textit{MAPPING OF FUNCTIONS}}}}
+\addcontentsline{toc}{subsection}{4. \textit{MAPPING OF FUNCTIONS}}
+\hyphenation{teks-nya se-mu-la la-por-an meng-o-lah ba-han Task-Manager}
+
+%Deskripsi fungsi-fungsi, relasi terhadap fungsi-fungsi sub sistem.
+
+\begin{itemize}
+\item PUSPA menerima masukan, yang berbentuk teks diterima oleh modul UserInterface, sedangkan yang berbentuk suara diolah oleh modul SpeechRecogniser menjadi bentuk teks, sehingga semua masukan pada akhirnya akan berbentuk teks.
+\item Modul FaceDetector melacak kedudukan muka pengguna, dan datanya dikirimkan langsung ke modul Synthespian.
+\item Masukan teks akan disusun oleh modul ClientSocket menurut protokol tertentu, yang kemudian dikirimkan ke modul ServerSocket.
+\item Modul ServerSocket mengembalikan data tersusun yang diterima ke dalam bentuk semula, untuk diolah oleh modul NaturalLanguageAnalyser.
+\item Modul NaturalLanguageAnalyser mengolah masukan yang diterima, dan modul DialogueManager menentukan apakah masukan tersebut merupakan obrolan atau tugas.
+\item Obrolan diteruskan ke modul NaturalLanguageGenerator, sedangkan tugas diteruskan ke modul TaskManager.
+\item Modul TaskManager berusaha mewujudkan tugas yang diberikan, dan memberikan laporan akan hasilnya ke modul DialogueManager.
+\item DialogueManager mengambil bahan pengetahuan dari modul KnowledgeBase.
+\item Modul NaturalLanguageGenerator menciptakan kalimat bagi masukan apapun yang diterimanya dari DialogueManager.
+\item Modul ServerSocket menyusun data yang diterima dari NaturalLanguageGenerator dan dikirimkan kembali ke modul ClientSocket.
+\item Modul ClientSocket mengurai data tersusun yang diterima, keluaran teks dikirimkan ke modul UserInterface dan SpeechSynthesiser, sedangkan parameter simulasi suasana hati dikirimkan ke modul Synthespian.
+\item Modul UserInterface langsung meneruskan keluaran teks, sedangkan modul SpeechSynthesiser mengolah dahulu keluaran teksnya menjadi berbentuk suara, dan modul Synthespian menyimulasikan pergerakan muka PUSPA berdasarkan parameter yang diterima, baik parameter kedudukan muka atau parameter suasana hati.
+\end{itemize}

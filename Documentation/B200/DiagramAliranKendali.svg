@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg7557"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="DiagramAliranKendali.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+   inkscape:export-xdpi="99.977859"
+   inkscape:export-ydpi="99.977859">
+  <defs
+     id="defs7559">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path8238"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective7565" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="393.27664"
+     inkscape:cy="515.54653"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="720"
+     inkscape:window-x="0"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata7562">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g7633"
+       transform="translate(4.2426636,4.2427216)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7597"
+         y="70.291115"
+         x="345.15433"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px"
+           y="70.291115"
+           x="345.15433"
+           id="tspan7599"
+           sodipodi:role="line">Awal</tspan></text>
+      <rect
+         ry="12.727923"
+         rx="15.556349"
+         y="51.09898"
+         x="335.16861"
+         height="28.284275"
+         width="67.882233"
+         id="rect7629"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7638"
+       transform="translate(4.9497426,-9.7013025)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7601"
+         y="154.33656"
+         x="287.08536"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px"
+           y="154.33656"
+           x="287.08536"
+           id="tspan7603"
+           sodipodi:role="line">Terima masukan</tspan></text>
+      <rect
+         transform="matrix(1,0,-0.5,0.8660254,0,0)"
+         y="153.71762"
+         x="366.86053"
+         height="34.292854"
+         width="173.94827"
+         id="rect7631"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.14913988;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7647"
+       transform="translate(128.69344,21.58511)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7605"
+         y="257.57416"
+         x="178.1909"
+         style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="257.57416"
+           x="178.1909"
+           id="tspan7607"
+           sodipodi:role="line">Perbincangan</tspan></text>
+      <rect
+         transform="matrix(0.7071068,0.7071068,-0.7071068,0.7071068,0,0)"
+         y="-51.850338"
+         x="294.14966"
+         height="115.96552"
+         width="115.96552"
+         id="rect7643"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7652"
+       transform="translate(-57.275647,147.62383)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7621"
+         y="273.13052"
+         x="408.70773"
+         style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="273.13052"
+           x="408.70773"
+           id="tspan7623"
+           sodipodi:role="line">Olah</tspan></text>
+      <rect
+         y="249.08888"
+         x="403.05087"
+         height="32.526913"
+         width="55.154327"
+         id="rect7645"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7659"
+       transform="translate(-213.5462,198.06462)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7609"
+         y="324.04221"
+         x="557.20013"
+         style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="324.04221"
+           x="557.20013"
+           id="tspan7611"
+           sodipodi:role="line">Tugas</tspan></text>
+      <rect
+         transform="matrix(0.7071068,0.7071068,-0.7071068,0.7071068,0,0)"
+         y="-223.39445"
+         x="606.60547"
+         height="65.053825"
+         width="65.053825"
+         id="rect7657"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7688"
+       transform="translate(103.82341,70.512557)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7613"
+         y="642.24023"
+         x="226.27419"
+         style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="642.24023"
+           x="226.27419"
+           id="tspan7615"
+           sodipodi:role="line">Tanggapi</tspan></text>
+      <rect
+         transform="matrix(1,0,-0.5,0.8660254,0,0)"
+         y="717.10028"
+         x="587.56311"
+         height="35.92585"
+         width="98.994949"
+         id="rect7664"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.14913988;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7675"
+       transform="translate(-5.4142136,185.47378)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7617"
+         y="401.82394"
+         x="494.97476"
+         style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="401.82394"
+           x="494.97476"
+           id="tspan7619"
+           sodipodi:role="line">Laksanakan</tspan></text>
+      <rect
+         y="383.43918"
+         x="492.14633"
+         height="24.04163"
+         width="125.86501"
+         id="rect7666"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7680"
+       transform="translate(-16.263436,294.15643)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7625"
+         y="488.09097"
+         x="363.45288"
+         style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="488.09097"
+           x="363.45288"
+           id="tspan7627"
+           sodipodi:role="line">Akhir</tspan></text>
+      <rect
+         ry="11.313708"
+         rx="11.313708"
+         y="468.29199"
+         x="357.79602"
+         height="25.455845"
+         width="63.63961"
+         id="rect7668"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7701"
+       transform="translate(183.84777,114.15505)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7693"
+         y="505.06152"
+         x="134.3503"
+         style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="505.06152"
+           x="134.3503"
+           id="tspan7695"
+           sodipodi:role="line">Buat</tspan><tspan
+           id="tspan7697"
+           y="530.06152"
+           x="134.3503"
+           sodipodi:role="line">tanggapan</tspan></text>
+      <rect
+         y="486.67676"
+         x="132.93608"
+         height="50.91169"
+         width="113.13708"
+         id="rect7699"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <g
+       id="g7715"
+       transform="translate(46.669048,-61.146389)"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859">
+      <text
+         id="text7707"
+         y="328.28485"
+         x="106.06602"
+         style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="328.28485"
+           x="106.06602"
+           id="tspan7709"
+           sodipodi:role="line">Buat</tspan><tspan
+           id="tspan7711"
+           y="353.28485"
+           x="106.06602"
+           sodipodi:role="line">gerakan</tspan></text>
+      <rect
+         y="309.90005"
+         x="103.23759"
+         height="52.325901"
+         width="87.681244"
+         id="rect7713"
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 373.35239,84.625977 L 373.35239,122.42206"
+       id="path7721"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7633"
+       inkscape:connection-end="#g7638"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 373.35239,154.12054 L 373.35239,191.91661"
+       id="path9010"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7638"
+       inkscape:connection-end="#g7647"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 290.35238,274.91662 L 238.58788,274.91662"
+       id="path9012"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7647"
+       inkscape:connection-end="#g7715"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 373.35239,357.91663 L 373.35239,395.71271"
+       id="path9014"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7647"
+       inkscape:connection-end="#g7652"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 373.35239,430.23963 L 373.35239,468.03573"
+       id="path9016"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7652"
+       inkscape:connection-end="#g7659"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 373.35239,562.03574 L 373.35239,599.83181"
+       id="path9018"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7659"
+       inkscape:connection-end="#g7701"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;marker-end:url(#Arrow1Lend)"
+       d="M 420,515.36218 L 550.06897,516.18977 L 550,567.36218"
+       id="path9020"
+       inkscape:connector-type="polyline"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 373.35239,652.7435 L 373.35239,690.53961"
+       id="path12112"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7701"
+       inkscape:connection-end="#g7688"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 373.35239,723.65231 L 373.35239,761.44842"
+       id="path12629"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7688"
+       inkscape:connection-end="#g7680"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 199.4994,302.07957 L 199.31778,775.24809 L 340.42374,775.44842"
+       id="path13146"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#g7715"
+       inkscape:connection-end="#g7680"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="378"
+       y="376.36218"
+       id="text13663"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859"><tspan
+         sodipodi:role="line"
+         id="tspan13665"
+         x="378"
+         y="376.36218">Y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="264"
+       y="267.36218"
+       id="text13667"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859"><tspan
+         sodipodi:role="line"
+         id="tspan13669"
+         x="264"
+         y="267.36218">T</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="469"
+       y="511.36218"
+       id="text13671"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859"><tspan
+         sodipodi:role="line"
+         id="tspan13673"
+         x="469"
+         y="511.36218">Y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="380"
+       y="578.36218"
+       id="text13675"
+       inkscape:export-filename="/Volumes/Users/eprabowo/Desktop/B200/DiagramAliranKendali.png"
+       inkscape:export-xdpi="99.977859"
+       inkscape:export-ydpi="99.977859"><tspan
+         sodipodi:role="line"
+         id="tspan13677"
+         x="380"
+         y="578.36218">T</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;marker-end:url(#Arrow1Lend)"
+       d="M 551,594.36218 L 551.13325,624.87369 L 432,625.36218"
+       id="path14017"
+       inkscape:connector-type="polyline"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
