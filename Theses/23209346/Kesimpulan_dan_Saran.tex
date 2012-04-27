@@ -1,0 +1,39 @@
+\chapter{\uppercase{Kesimpulan dan Saran}}
+\label{chap:kesimpulan}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Kesimpulan}
+
+SpeaCal yang merupakan subsistem penentuan posisi pengguna berdasarkan sinyal suara untuk RESTU telah berhasil dirancang, diimplementasikan, diuji, dan diintegrasikan dalam RESTU. SpeaCal telah memenuhi kebutuhan subsistem ini, yaitu memberikan informasi perkiraan \textit{azimuth} posisi pengguna relatif terhadap layar.
+
+SpeaCal telah memenuhi spesifikasi yang sebelumnya didefinisikan, dengan detail sebagai berikut.
+
+\begin{enumerate}
+\item SpeaCal mampu menangkap suara pengguna dengan menggunakan \textit{microphone array}, yang terdiri dari empat mikrofon, secara bersamaan memanfaatkan pustaka Portaudio. Representasi sinyal yang ditangkap disimpan dalam file yang berekstensi \texttt{raw}.
+\item SpeaCal mampu menghitung TDOA dari sinyal suara yang ditangkap oleh \textit{microphone array} menggunakan metode CCC. Implementasi CCC menggunakan DFT memanfaatkan pustaka FFTW3. Implementasi telah diverifikasi kebenarannya dengan cara membandingkan hasil perhitungan yang diperoleh dari implementasi dengan hasil perhitungan yang diperoleh dari fungsi \texttt{xcorr} pada program Octave.
+\item SpeaCal mampu menghitung PtPAR dari sinyal suara yang ditangkap oleh \textit{microphone array}. Implementasi telah diverifikasi kebenarannya dengan cara membandingkan hasil perhitungan yang diperoleh dari implementasi dengan hasil pengamatan grafik sinyal yang ditampilkan program Audacity.
+\item SpeaCal mampu menyimpan data TDOA, PtPAR, dan posisi untuk membuat data latih dan data uji JST.
+\item SpeaCal mampu melatih JST dengan nilai TDOA dan/atau PtPAR yang didapatkan selama pengambilan data latih dengan memanfaatkan pustaka FANN.
+\item SpeaCal mampu menguji JST dengan nilai TDOA dan/atau PtPAR yang didapatkan selama pengambilan data uji dengan memanfaatkan pustaka FANN.
+\item SpeaCal mampu menggunakan JST untuk menghasilkan informasi perkiraan posisi pengguna (sumber suara) secara riil, meskipun hasilnya seringkali masih tidak akurat.
+\item SpeaCal mampu mengirimkan informasi perkiraan posisi pengguna ke bagian \textit{GUI Engine} dari RESTU yang kemudian dimanfaatkan untuk menentukan ke arah mana agen virtual menengokkan kepalanya.
+\end{enumerate}
+
+Pada awal penelitian, parameter TDOA dan PtPAR diperkirakan dapat digunakan untuk melakukan penentuan posisi sumber suara, atau dalam hal ini adalah posisi pengguna. Parameter PtPAR terbukti dapat digunakan untuk memperkirakan posisi pengguna, sedangkan parameter TDOA tidak dapat digunakan karena syarat \textit{time-constraint} tidak dapat terpenuhi oleh desain dan implementasi yang digunakan. Oleh karena itu, SpeaCal hanya menggunakan PtPAR untuk memperkirakan posisi pengguna.
+
+JST terbaik yang diperoleh dalam proses pelatihan memiliki tiga lapisan (terdiri dari satu masukan, satu tersembunyi, dan satu keluaran) dengan 16 neuron tersembunyi. MSE pelatihan dan pengujian JST tersebut mencapai 0,0001499649 dan 0,005309. Sedangkan, pengujian dengan tiga set data lain terhadap JST tersebut menghasilkan MSE 0,139543; 0,210295; dan 0,464500.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Saran}
+
+Beberapa alternatif pengembangan subsistem penentuan posisi pengguna berdasarkan sinyal pengguna yang mungkin dilakukan adalah sebagai berikut.
+
+\begin{itemize}
+\item Penggunaan perangkat keras akuisisi sinyal yang mampu berjalan secara \textit{real-time}, misalnya sistem \textit{embedded}.
+\item Penambahan operasi pra-pemrosesan sinyal, misalnya penapisan derau.
+\item Pengembangan ke arah penentuan posisi pengguna berdasarkan audiovisual.
+\item Penggunaan model propagasi sinyal suara \textit{reverberant}.
+\end{itemize}

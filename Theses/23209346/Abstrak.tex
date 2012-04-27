@@ -1,0 +1,36 @@
+\addcontentsline{toc}{chapter}{\uppercase{Abstrak}}
+\begin{center}
+\large{\textbf{\uppercase{Abstrak}}}\linebreak
+
+\vskip .5cm
+
+%\large{\textbf{\uppercase{Subsistem Penentuan Posisi Pengguna Berdasarkan Sinyal Suara Untuk \textit{RESTU's an Engine for Synthetic Thespian Units} (RESTU)}}}\linebreak
+
+\large{\textbf{\uppercase{Rancang-Bangun \textit{RESTU's an Engine for Synthetic Thespian Units} (RESTU): Subsistem Penentuan Posisi Pengguna Berdasarkan Sinyal Suara (SpeaCal)}}}
+
+\vskip .5cm
+
+\normalsize{\textbf{Oleh}}\linebreak
+\large{\textbf{Aditya Arie Nugraha\linebreak
+NIM: 23209346\linebreak
+\uppercase{Program Magister Teknik Elektro}}}\linebreak
+\end{center}
+
+\singlespacing
+Sebagai sebuah \textit{engine} untuk membangun sistem \textit{embodied conversational agent} (ECA),  \textit{RESTU's an Engine for Synthetic Thespian Units} (RESTU) membutuhkan subsistem yang dapat memberikan informasi posisi pengguna. Informasi tersebut dapat dimanfaatkan untuk meningkatkan interaksi agen virtual dengan pengguna, misalnya dengan terjadinya kontak mata antara agen virtual dan pengguna. Posisi pengguna dapat diperkirakan berdasarkan sinyal suara yang tertangkap oleh mikrofon atau citra yang tertangkap oleh kamera.
+
+Penelitian ini bertujuan merancang, mengimplementasikan, dan menguji subsistem penentuan posisi pengguna berdasarkan sinyal suara, serta mengintegrasikannya dengan RESTU. Untuk memperkirakan posisi pengguna, subsistem yang kemudian diberi nama SpeaCal ini mencoba memanfaatkan parameter \textit{time difference of arrival} (TDOA) dan \textit{peak-to-peak amplitude ratio} (PtPAR) yang digunakan sebagai masukan jaringan syaraf tiruan (JST).
+
+Perangkat keras yang digunakan untuk mengimplementasikan SpeaCal adalah komputer atau laptop, \textit{USB sound card} dengan satu kanal masukan dan \textit{sample rate} 24 KHz, serta mikrofon. SpeaCal menggunakan sebuah \textit{microphone array} yang tersusun dari empat buah mikrofon.
+
+Dari proses pengambilan data untuk JST, diketahui bahwa TDOA yang dihasilkan oleh SpeaCal tidak dapat digunakan sebagai masukan JST karena tingkat konsistensinya sangat rendah dan cenderung tidak valid. Hal ini disebabkan oleh syarat \textit{time-constraint} yang penting bagi perhitungan TDOA tidak dapat dipenuhi. Oleh karena itu, penentuan posisi pengguna pada SpeaCal hanya menggunakan parameter PtPAR.
+
+Dua set data yang menyusun 240 data latih dan 60 data uji digunakan untuk melatih JST. JST yang dihasilkan kemudian diuji dengan tiga set data lain yang secara total memuat 200 data. JST terbaik yang diperoleh memiliki 3 lapisan dengan 16 neuron tersembunyi. \textit{Mean squared error} (MSE) pelatihan dan pengujian JST tersebut mencapai 0,0001499649 dan 0,005309. Pengujian dengan tiga set data lain menghasilkan MSE 0,139543; 0,210295; dan 0,464500.
+
+JST tersebut kemudian digunakan dalam pengujian SpeaCal yang telah diintegrasikan dengan RESTU. Dalam proses pengujian, diketahui bahwa SpeaCal mampu menghasilkan informasi perkiraan posisi pengguna (sumber suara) untuk RESTU secara \textit{real-time}, meskipun hasilnya seringkali masih tidak akurat.
+
+\vskip .5cm
+\hangpara{6em}{1}
+Kata kunci: penentuan posisi pewicara, \textit{time difference of arrival}, \textit{peak-to-peak amplitude ratio}, jaringan syaraf tiruan, \textit{microphone array}
+
+\onehalfspacing

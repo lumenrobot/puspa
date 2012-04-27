@@ -1,0 +1,581 @@
+@InProceedings{ cassell1998,
+	author = "J Cassell and T Bickmore and M Billinghurst and L Campbell and K Chang and H Vilhj{\'a}lmsson and H Yan",
+	booktitle = "Proceedings of the First Workshop on Embodied Conversational Characters",
+	number = "Goodwin 1981",
+	pages = "109--120",
+	publisher = "Citeseer",
+	title = "{An architecture for embodied conversational characters}",
+	year = "1998",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Cassell et al./Cassell et al. - 1998 - An architecture for embodied conversational characters.pdf:pdf"
+}
+
+@InProceedings{ lee2002,
+	title = "{Eyes alive}",
+	booktitle = "ACM Transactions on Graphics (TOG)",
+	author = "S.P. Lee and J.B. Badler and N.I. Badler",
+	publisher = "ACM",
+	pages = "637--644",
+	volume = "21",
+	number = "3",
+	month = jul,
+	year = "2002",
+	issn = "07300301",
+	keywords = "a fluent, continuous one, describes the phenomenological aspect, eye movement synthesis, facial animation, hci, human-computer interface, modeling, of eye movement, saccades, statistical, the name very appropriately",
+	doi = "10.1145/566654.566629",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Lee, Badler, Badler/Lee, Badler, Badler - 2002 - Eyes alive.pdf:pdf"
+}
+
+@InProceedings{ vanes2002,
+	author = "I. {Van Es} and Dirk Heylen and B. {Van Dijk} and Anton Nijholt",
+	booktitle = "Proceedings of the Working Conference on Advanced Visual Interfaces",
+	keywords = "conversational agents, gaze, non-verbal communication",
+	pages = "357--358",
+	publisher = "ACM",
+	title = "{Making agents gaze naturally-Does it work?}",
+	year = "2002",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Van Es et al./Van Es et al. - 2002 - Making agents gaze naturally-Does it work.pdf:pdf"
+}
+
+@InProceedings{ niewiadomski2009,
+	author = "Radoslaw Niewiadomski and Elisabetta Bevacqua and Maurizio Mancini and Catherine Pelachaud",
+	title = "Greta: an interactive expressive ECA system",
+	booktitle = "Proceedings of The 8th International Conference on Autonomous Agents and Multiagent Systems - Volume 2",
+	series = "AAMAS '09",
+	year = "2009",
+	isbn = "978-0-9817381-7-8",
+	location = "Budapest, Hungary",
+	pages = "1399--1400",
+	publisher = "International Foundation for Autonomous Agents and Multiagent Systems",
+	address = "Richland, SC",
+	keywords = "BML, ECA architecture, FML, multimodal behavior, SAIBA",
+	acmid = "1558314",
+	numpages = "2"
+}
+
+@Book{ jurafsky2009,
+	author = "Daniel Jurafsky and James H. Martin",
+	title = "{Speech and Language Processing}",
+	year = "2009",
+	isbn = "0131873210",
+	publisher = "Prentice-Hall, Inc.",
+	edition = "2nd"
+}
+
+@Misc{ depdiknas2011,
+	author = "{Departemen Pendidikan Nasional Republik Indonesia}",
+	title = "{Kamus Besar Bahasa Indonesia}",
+	note = "diakses pada Mei 2011",
+	url = "http://pusatbahasa.diknas.go.id/kbbi/"
+}
+
+@Article{ doclo2003,
+	author = "Simon Doclo and Marc Moonen",
+	title = "Robust Adaptive Time Delay Estimation for Speaker Localization in Noisy and Reverberant Acoustic Environments",
+	journal = "EURASIP Journal on Applied Signal Processing",
+	year = "2003",
+	volume = "2003",
+	pages = "1110--1124",
+	number = "11",
+	bibdate = "2011-02-28",
+	bibsource = "DBLP, http://dblp.uni-trier.de/db/journals/ejasp/ejasp2003.html\\\\\\\\\\\\\\\\\\\\\\\\#DocloM03"
+}
+
+@MastersThesis{ kirkwood03,
+	author = "Brent C. Kirkwood",
+	title = "Acoustic Source Localization Using Time-Delay Estimation",
+	school = "Technical University of Denmark",
+	year = "2003",
+	month = "August",
+	file = ":/home/inspiration/Documents/Paper/BCK\_MS\_Thesis\_Final\_20030811.pdf:PDF"
+}
+
+@PhDThesis{ nakano2010,
+	author = "Alberto Yoshihiro Nakano",
+	title = "Exploring {Spatial Information For Distant Speech Recognition Under Real Environmental Conditions}",
+	school = "Toyohashi University of Technology",
+	year = "2010",
+	month = "March",
+	file = ":/home/inspiration/Documents/Paper/alberto.pdf:PDF"
+}
+
+@InProceedings{ saruwatari09,
+	author = "Hiroshi Saruwatari and Hiromichi Kawanami and Shota Takeuchi and Yu Takahashi and Tobias Cincarek and Kiyohiro Shikano",
+	title = "Hands-free speech recognition challenge for real-world speech dialogue systems",
+	booktitle = "ICASSP",
+	year = "2009",
+	pages = "3729--3732",
+	publisher = "IEEE",
+	bibdate = "2010-05-06",
+	bibsource = "DBLP, http://dblp.uni-trier.de/db/conf/icassp/icassp2009.html\\\\\\\\\\\\\\\\\\\\\\\\#SaruwatariKTTCS09"
+}
+
+@InProceedings{ wolff2008,
+	author = "Robin Wolff and David J. Roberts and Alessio Murgia and Norman Murray and John Rae and William Steptoe and Anthony Steed and Paul M. Sharkey",
+	title = "Communicating Eye Gaze across a Distance without Rooting Participants to the Spot",
+	booktitle = "DS-RT",
+	year = "2008",
+	editor = "David Roberts and Abdulmotaleb El-Saddik and Alois Ferscha",
+	pages = "111--118",
+	publisher = "IEEE Computer Society",
+	isbn = "978-0-7695-3425-1",
+	bibdate = "2009-06-15",
+	bibsource = "DBLP, http://dblp.uni-trier.de/db/conf/dsrt/dsrt2008.html\\\\\\\\\\\\\\\\\\\\\\\\#WolffRMMRSSS08",
+	booktitle1 = "12th {IEEE}/{ACM} International Symposium on Distributed Simulation and Real-Time Applications, 27-29 October 2008, Vancouver, {BC}, Canada, Proceedings"
+}
+
+@Article{ turing1950,
+	author = "A. M. Turing",
+	title = "Computing Machinery and Intelligence",
+	journal = "Mind",
+	volume = "59",
+	number = "236",
+	month = oct,
+	year = "1950",
+	pages = "433--60",
+	ISSN = "0026-4423"
+}
+
+@Article{ weizenbaum1966,
+	author = "J. Weizenbaum",
+	title = "{ELIZA}-a computer program for the study of natural language comunication between man and machine",
+	journal = "Communications of the ACM",
+	year = "1966",
+	volume = "9",
+	number = "1",
+	pages = "36--45"
+}
+
+@Article{ shawar2007,
+	title = "Chatbots: Are they Really Useful?",
+	author = "Bayan Abu Shawar and Eric Atwell",
+	journal = "LDV Forum",
+	year = "2007",
+	number = "1",
+	volume = "22",
+	pages = "29--49",
+	bibdate = "2011-03-14",
+	bibsource = "DBLP, http://dblp.uni-trier.de/db/journals/ldvf/ldvf22.html\\\\\\\\\\\\\\\\\\\\\\#ShawarA07"
+}
+
+@Article{ zadrozny2000,
+	title = "Enabling technologies: natural language dialogue for personalized interaction",
+	author = "Wlodek Zadrozny and Malgorzata Budzikowska and Joyce Yue Chai and Nanda Kambhatla and Sylvie Levesque and Nicolas Nicolov",
+	journal = "Communications of the ACM",
+	year = "2000",
+	number = "8",
+	volume = "43",
+	pages = "116--120",
+	bibdate = "2009-04-16",
+	bibsource = "DBLP, http://dblp.uni-trier.de/db/journals/cacm/cacm43.html\\\\\\\\\\\\\\\\\\\\\\#ZadroznyBCKLN00"
+}
+
+@Article{ mctear2002,
+	author = "Michael F. McTear",
+	title = "Spoken dialogue technology: enabling the conversational user interface",
+	journal = "ACM Computing Surveys",
+	volume = "34",
+	month = mar,
+	year = "2002",
+	issn = "0360-0300",
+	pages = "90--169",
+	doi = "http://doi.acm.org/10.1145/505282.505285",
+	publisher = "ACM",
+	address = "New York, NY, USA",
+	keywords = "Dialogue management, human computer interaction, language generation, language understanding, speech recognition, speech synthesis",
+	acmid = "505285",
+	issue = "1",
+	numpages = "80"
+}
+
+@Misc{ stephens-,
+	title = "What Has the Loebner Contest Told Us About Conversant Systems?",
+	author = "Kenneth R. Stephens",
+	note = "diakses pada 10 Mei 2011, 02:00 WIB",
+	url = "http://www.behavior.org/resources/325.pdf"
+}
+
+@InCollection{ wallace2009,
+	title = "{The Anatomy of A.L.I.C.E.}",
+	booktitle = "{Parsing the Turing Test}",
+	author = "Richard S. Wallace",
+	editor = "Robert Epstein and Gary Roberts and Grace Beber",
+	publisher = "Springer Netherlands",
+	pages = "181--210",
+	year = "2009",
+	isbn = "978-1-4020-6710-5",
+	note = "10.1007/978-1-4020-6710-5\_13",
+	affiliation = "A.L.I.C.E. Artificial Intelligence Foundation, Inc. Bethlehem PA USA",
+	keyword = "Computer Science"
+}
+
+@Article{ gasperis2010,
+	title = "{Building an AIML Chatter Bot Knowledge-Base Starting from a FAQ and a Glossary}",
+	author = "Giovanni De Gasperis",
+	journal = "Journal of e-Learning and Knowledge Society",
+	pages = "75--83",
+	volume = "6",
+	number = "2",
+	year = "2010",
+	issn = "1826 - 6223"
+}
+
+@Misc{ alice2011,
+	title = "{Chat Robot Survey}",
+	note = "diakses pada 10 Mei 2011, 02:00 WIB",
+	url = "http://www.alicebot.org/aimlbots.html",
+	howpublished = "{ALICE Artificial Intelligence Foundation}",
+	author = "\_\_\_\_\_\_\_\_\_\_"
+}
+
+@Misc{ loebner2011,
+	author = "Hugh Gene Loebner",
+	title = "{Home Page of The Loebner Prize in Artificial Intelligence}",
+	note = "diakses pada 10 Mei 2011, 02:00 WIB",
+	url = "http://www.loebner.net/Prizef/loebner-prize.html"
+}
+
+@Manual{ wallace2003,
+	title = "The Elements of AIML Style",
+	author = "Richard S. Wallace",
+	month = mar,
+	year = "2003"
+}
+
+@Book{ cole1997,
+	title = "{Survey of State of the Art in Human Language Technology}",
+	publisher = "Cambrige University Press",
+	year = "1997",
+	editor = "Ronald A. Cole and Joseph Mariani and Hans Uszkoreit and Annie Zaenen and Victor Zue",
+	URL = "http://cslu.cse.ogi.edu/HLTsurvey/"
+}
+
+@Article{ rehm2005,
+	author = "M. Rehm",
+	doi = "10.1093/ietisy/e88-d.11.2445",
+	journal = "IEICE Transactions on Information and Systems",
+	keywords = "embodied conversational agents, multi-party com-",
+	month = nov,
+	number = "11",
+	pages = "2445--2452",
+	title = "{From Chatterbots to Natural Interaction -- Face to Face Communication with Embodied Conversational Agents}",
+	volume = "E88-D",
+	year = "2005",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Rehm, Andr/Rehm, Andr - Unknown - From Chatterbots to Natural Interaction — Face to Face.pdf:pdf"
+}
+
+@Article{ cassell2000,
+	author = "Justine Cassell",
+	doi = "10.1145/332051.332075",
+	journal = "Communications of the ACM",
+	number = "4",
+	pages = "70--78",
+	publisher = "ACM",
+	title = "{Embodied conversational interface agents}",
+	volume = "43",
+	year = "2000",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Cassell/Cassell - 2000 - Embodied conversational interface agents.pdf:pdf"
+}
+
+@Article{ beun2003,
+	author = "RJ Beun and Eveliene De Vos",
+	journal = "Intelligent virtual agents: 4th",
+	pages = "315--319",
+	title = "{Embodied conversational agents: effects on memory performance and anthropomorphisation}",
+	year = "2003",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Beun, Vos/Beun, Vos - 2003 - Embodied conversational agents effects on memory performance and anthropomorphisation.pdf:pdf"
+}
+
+@InProceedings{ cassell2000a,
+	author = "J Cassell and T Bickmore and H. Vilhj{\'a}lmsson and H Yan",
+	booktitle = "Proceedings of the 5th international conference on Intelligent user interfaces",
+	pages = "52--59",
+	publisher = "ACM",
+	title = "{More than just a pretty face: affordances of embodiment}",
+	year = "2000",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Cassell et al./Cassell et al. - 2000 - More than just a pretty face affordances of embodiment.pdf:pdf"
+}
+
+@InProceedings{ cassell1999,
+	author = "J Cassell and T Bickmore and M Billinghurst and L. Campbell and K. Chang and H. Vilhj{\'a}lmsson and H. Yan",
+	booktitle = "Proceedings of the SIGCHI conference on Human factors in computing systems",
+	doi = "10.1145/302979.303150",
+	keywords = "and, breakdown, learn, more functional in high, more resistant to communication, noise environments, power of human, the full breadth and, therefore, we propose to leverage",
+	number = "May",
+	pages = "520--527",
+	title = "{Embodiment in conversational interfaces: Rea}",
+	year = "1999",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Cassell et al./Cassell et al. - 1999 - Embodiment in conversational interfaces Rea.pdf:pdf"
+}
+
+@Article{ rickel2002,
+	author = "J. Rickel and S. Marsella and J. Gratch and R. Hill and D. Traum and W. Swartout",
+	doi = "10.1109/MIS.2002.1024750",
+	issn = "1541-1672",
+	journal = "IEEE Intelligent Systems",
+	month = jul,
+	number = "4",
+	pages = "32--38",
+	title = "{Toward a new generation of virtual humans for interactive experiences}",
+	volume = "17",
+	year = "2002",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Rickel et al./Rickel et al. - 2002 - Toward a new generation of virtual humans for interactive experiences.pdf:pdf"
+}
+
+@Article{ foster2007,
+	author = "M. Foster",
+	journal = "Universal Access in Human-Computer Interaction. Ambient Interaction",
+	pages = "828--837",
+	publisher = "Springer",
+	title = "{Enhancing human-computer interaction with embodied conversational agents}",
+	year = "2007",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Foster/Foster - 2007 - Enhancing human-computer interaction with embodied conversational agents.pdf:pdf"
+}
+
+@InProceedings{ massaro2006,
+	author = "D.W. Massaro and Ying Liu and T.H. Chen and Charles Perfetti",
+	booktitle = "Proceedings of the Ninth International Conference on Spoken Language Processing (Interspeech 2006-ICSLP, September, Pittsburgh, PA)",
+	keywords = "[Electronic Manuscript]",
+	pages = "825--828",
+	publisher = "Citeseer",
+	title = "{A multilingual embodied conversational agent for tutoring speech and language learning}",
+	year = "2006",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Massaro et al./Massaro et al. - 2006 - A multilingual embodied conversational agent for tutoring speech and language learning.pdf:pdf"
+}
+
+@InProceedings{ swartout2010,
+	author = "William Swartout and David Traum and Ron Artstein and Dan Noren and Paul Debevec and Kerry Bronnenkant and Josh Williams and Anton Leuski and Shrikanth Narayanan and Diane Piepol and Chad Lane and Jacquelyn Morie and Priti Aggarwal and Matt Liewer and Jen-Yuan Chiang and Jillian Gerten and Selina Chu and Kyle White",
+	title = "Ada and grace: toward realistic and engaging virtual museum guides",
+	booktitle = "Proceedings of the 10th international conference on Intelligent virtual agents",
+	series = "IVA'10",
+	year = "2010",
+	isbn = "3-642-15891-9, 978-3-642-15891-9",
+	location = "Philadelphia, PA",
+	pages = "286--300",
+	publisher = "Springer-Verlag",
+	address = "Berlin, Heidelberg",
+	keywords = "informal science education, natural language interaction, photoreal characters, STEM, virtual human applications, virtual museum guides",
+	acmid = "1889110",
+	numpages = "15"
+}
+
+@Misc{ themuseumofscienceboston-,
+	title = "{Meet Ada and Grace: Virtual Museum Guides}",
+	author = "\_\_\_\_\_\_\_\_\_\_",
+	url = "http://www.mos.org/interfaces/adagrace.php",
+	note = "diakses pada 10 Mei 2011, 17:00 WIB",
+	howpublished = "{The Museum of Science, Boston}"
+}
+
+@Misc{ uscinstituteforcreativetechnologies-,
+	title = "{Responsive Virtual Human Museum Guides}",
+	author = "\_\_\_\_\_\_\_\_\_\_",
+	url = "http://ict.usc.edu/projects/responsive_virtual_human_museum_guides/",
+	note = "diakses pada 10 Mei 2011, 17:00 WIB",
+	howpublished = "{USC Institute for Creative Technologies}"
+}
+
+@Misc{ dppobappenas2009,
+	title = "{Jumlah Pengunjung Museum di Indonesia}",
+	author = "\_\_\_\_\_\_\_\_\_\_",
+	year = "2009",
+	note = "diakses pada 10 Mei 2011, 17:00 WIB",
+	url = "http://kppo.bappenas.go.id/preview/225",
+	howpublished = "{Direktorat Kebudayaan, Pariwisata, Pemuda, dan Olahraga, Badan Perencanaan Pembangunan Nasional}"
+}
+
+@Booklet{ bps2010,
+	title = "{Hasil Sensus Penduduk 2010: Data Agregat per Provinsi}",
+	author = "\_\_\_\_\_\_\_\_\_\_",
+	month = agt,
+	year = "2010",
+	howpublished = "{Badan Pusat Statistik}"
+}
+
+@Misc{ armedwithscience-,
+	title = "{Virtual Humans Blog on Science and Women’s History}",
+	author = "\_\_\_\_\_\_\_\_\_\_",
+	month = mar,
+	year = "2010",
+	note = "diakses pada 10 Mei 2011, 17:00 WIB",
+	url = "http://science.dodlive.mil/2010/03/04/virtual-humans-blog-on-science-and-womens-history/",
+	howpublished = "{Armed with Science}"
+}
+
+@InProceedings{ nugraha2010,
+	title = "{Smart Assistant for Museum's Objects Navigation (SAMsON)}",
+	booktitle = "Proceedings of The 5th AOTULE International Postgraduate Students Conference on Engineering",
+	author = "Aditya Arie Nugraha and Andik Taufiq and Nur Ichsan Utama and Ary Setijadi Prihatmanto",
+	pages = "186--189",
+	month = nov,
+	year = "2010",
+	isbn = "9789791344913"
+}
+
+@Book{ huang2001,
+	title = "{Spoken Language Processing: A Guide to Theory, Algorithm, and System Development}",
+	author = "Xuedong Huang and Alex Acero and Hsiao-Wuen Hon",
+	publisher = "Prentice Hall PTR",
+	address = "Upper Saddle River, NJ, USA",
+	edition = "1st",
+	year = "2001",
+	isbn = "0130226165"
+}
+
+@Article{ rabiner2007,
+	title = "Introduction to digital speech processing",
+	author = "Lawrence R. Rabiner and Ronald W. Schafer",
+	publisher = "Now Publishers Inc.",
+	address = "Hanover, MA, USA",
+	journal = "Foundations and Trends R in Signal Processing",
+	pages = "1--194",
+	volume = "1",
+	month = "January",
+	year = "2007",
+	issn = "1932-8346",
+	doi = "10.1561/2000000001",
+	acmid = "1345476",
+	issue = "1-2",
+	numpages = "194"
+}
+
+@Book{ baken1999,
+	title = "{Clinical Measurement of Speech \& Voice}",
+	author = "Ronald J. Baken and Robert F. Orlikoff",
+	publisher = "Singular",
+	edition = "2nd",
+	year = "1999"
+}
+
+@Book{ forouzan2003,
+	title = "{Data Communications and Networking}",
+	author = "Behrouz A. Forouzan",
+	publisher = "McGraw-Hill, Inc.",
+	address = "New York, NY, USA",
+	edition = "3rd",
+	year = "2003",
+	isbn = "0072923547"
+}
+
+@Book{ goldstein2010,
+	title = "{Sensation and Perception}",
+	author = "E. Bruce Goldstein",
+	publisher = "Wadsworth, Cengage Learning",
+	edition = "8th",
+	year = "2010",
+	isbn = "978-0-495-60149-4"
+}
+
+@Book{ gelfand2010,
+	title = "{Hearing: An Introduction to Psychological and Physiological Acoustics}",
+	author = "Stanley A. Gelfand",
+	publisher = "Informa Healthcare ",
+	edition = "5th",
+	year = "2010",
+	isbn = "978-1-4200-8865-6"
+}
+
+@InCollection{ elko2008,
+	title = "{Microphone Arrays}",
+	booktitle = "{Springer Handbook of Speech Processing}",
+	author = "Gary W. Elko and Jens Meyer",
+	editor = "Jacob Benesty and M. Mohan Sondhi and Yiteng (Arden) Huang",
+	publisher = "Springer Berlin Heidelberg",
+	pages = "1021--1041",
+	year = "2008",
+	isbn = "978-3-540-49127-9",
+	affiliation = "mh acoustics LLC, 25A Summit Ave, 07901 Summit, NJ, USA",
+	keyword = "Engineering"
+}
+
+@InCollection{ huang2008,
+	title = "{Time Delay Estimation and Source Localization}",
+	booktitle = "{Springer Handbook of Speech Processing}",
+	author = "Yiteng (Arden) Huang and Jacob Benesty and Jingdong Chen",
+	editor = "Jacob Benesty and M. Mohan Sondhi and Yiteng (Arden) Huang",
+	publisher = "Springer Berlin Heidelberg",
+	pages = "1043--1063",
+	year = "2008",
+	isbn = "978-3-540-49127-9",
+	affiliation = "Alcatel-Lucent, Bell Laboratories, 600 Mountain Avenue, 07974 Murray Hill, NJ, USA",
+	keyword = "Engineering"
+}
+
+@InCollection{ kollmeier2008,
+	title = "{Perception of Speech and Sound}",
+	booktitle = "{Springer Handbook of Speech Processing}",
+	author = "Birger Kollmeier and Thomas Brand and Bernd Meyer",
+	editor = "Jacob Benesty and M. Mohan Sondhi and Yiteng (Arden) Huang",
+	publisher = "Springer Berlin Heidelberg",
+	pages = "61--82",
+	year = "2008",
+	isbn = "978-3-540-49127-9",
+	affiliation = {Medizinische Physik, Universit{\"a}t Oldenburg, 26111 Oldenburg, Germany},
+	keyword = "Engineering"
+}
+
+@InCollection{ benesty2008,
+	title = "{Direction-of-Arrival and Time-Difference-of-Arrival Estimation}",
+	booktitle = "{Microphone Array Signal Processing}",
+	series = "Springer Topics in Signal Processing",
+	author = "Jacob Benesty and Jingdong Chen and Yiteng Huang",
+	publisher = "Springer Berlin Heidelberg",
+	pages = "181--215",
+	volume = "1",
+	year = "2008",
+	isbn = "978-3-540-78612-2",
+	keyword = "Engineering"
+}
+
+@InCollection{ chen2004,
+	title = "{Time Delay Estimation}",
+	booktitle = "{Audio Signal Processing for Next-Generation Multimedia Communication Systems}",
+	author = "Jingdong Chen and Yiteng (Arden) Huang and Jacob Benesty",
+	publisher = "Kluwer Academic Publishers",
+	address = "Boston",
+	year = "2004",
+	isbn = "1-4020-7768-8"
+}
+
+@Book{ halliday2004,
+	title = "{Fundamentals of Physics}",
+	author = "David Halliday and Robert Resnick and Jearl Walker",
+	publisher = "Wiley",
+	edition = "7th",
+	year = "2004"
+}
+
+@InProceedings{ birchfield2005,
+	title = "{Acoustic localization by interaural level difference}",
+	booktitle = "Acoustics, Speech, and Signal Processing, 2005. Proceedings.(ICASSP'05). IEEE International Conference on",
+	author = "S.T. Birchfield and R. Gangishetty",
+	publisher = "IEEE",
+	volume = "4",
+	number = "March",
+	year = "2005",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Birchfield, Gangishetty/Birchfield, Gangishetty - 2005 - Acoustic localization by interaural level difference.pdf:pdf"
+}
+
+@Article{ park2009,
+	title = "{Application of 3D sound technology to intelligent robots}",
+	author = "Youngjin Park",
+	publisher = "ACM Press",
+	address = "New York, New York, USA",
+	journal = "Proceedings of the 3rd International Universal Communication Symposium on - IUCS '09",
+	pages = "199",
+	number = "8",
+	year = "2009",
+	isbn = "9781605586410",
+	keywords = "acoustic mems, artificial ear, robot, sound direction estimation, sound source localization, spatially mapped gcc function",
+	doi = "10.1145/1667780.1667822",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Park/Park - 2009 - Application of 3D sound technology to intelligent robots.pdf:pdf"
+}
+
+@InProceedings{ lee2005,
+	title = "{Real-Time Sound Localization Using Time Difference for Human-Robot Interaction}",
+	booktitle = "Proc. 16th IFAC World Congress",
+	author = "J.Y. Lee and S. Ji and Minsoo Hahn and Y.J. Cho",
+	year = "2005",
+	keywords = "human-machine interface, interaction mechanism, robot vision, sound localization",
+	file = ":home/inspiration/Documents/Mendeley Desktop/Lee et al./Lee et al. - 2005 - Real-Time Sound Localization Using Time Difference for Human-Robot Interaction.pdf:pdf"
+}
+

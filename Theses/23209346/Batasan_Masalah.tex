@@ -1,0 +1,14 @@
+\section{Batasan Masalah}
+\label{sec:batasan}
+
+Dalam perancangan subsistem penentuan lokasi pengguna berdasarkan sinyal suara ini, beberapa asumsi penting yang digunakan adalah sebagai berikut.
+
+\begin{enumerate}
+\item Hanya ada satu sumber suara yang dideteksi pada satu waktu.
+\item Tidak ada derau dengan intensitas yang tinggi sedemikian sehingga suara ucapan yang tertangkap oleh mikrofon masih terdengar dengan jelas dan dominan.
+\item Tidak ada efek akustik dari ruangan, misalnya gema atau gaung. Dengan kata lain, mikrofon hanya menangkap sinyal yang bersifat \textit{direct path} dari sumber suara.
+\end{enumerate}
+
+Subsistem penentuan lokasi pengguna yang dirancang memanfaatkan perangkat keras yang murah dan mudah didapatkan, serta perangkat lunak \textit{open source}. Perangkat keras utama yang dibutuhkan oleh subsistem ini adalah komputer, \textit{sound card}, dan mikrofon. Komputer yang digunakan memiliki prosesor Intel$^{\small{\textregistered}}$~Core\texttrademark~2 Duo T8100 2,1 GHz dan memori 2 GB. \textit{Sound card} yang digunakan adalah \textit{USB sound card} tanpa merk yang memiliki dua kanal keluaran (hanya mendukung \textit{sample rate} 48 KHz) dan satu kanal masukan (hanya mendukung \textit{sample rate} 24 KHz). Sedangkan, mikrofon yang digunakan adalah mikrofon \textit{omnidirectional} merk Genius. Subsistem dirancang dan diimplementasikan pada sistem operasi Ubuntu (Linux). Oleh karena kompatibilitas terhadap sistem operasi belum dipertimbangkan, subsistem tidak dapat dipastikan berjalan pada sistem operasi selain Ubuntu (Linux).
+
+Subsistem penentuan lokasi pengguna yang dirancang akan diintegrasikan ke dalam RESTU. Sebagai \textit{showcase}, RESTU akan digunakan untuk membangun sebuah ECA yang berperan sebagai pemandu atau pusat informasi Laboratorium Sistem Komputer dan Kendali (LSKK), ITB. Perangkat keras yang akan digunakan untuk menampilkan pemandu virtual tersebut adalah perangkat \textit{multitouch screen} vertikal milik LSKK yang berdimensi 139 x 60 x 180 centimeter (panjang x lebar x tinggi) seperti yang terlihat pada \autoref{fig:multitouch-foto} dan \autoref{fig:multitouch-dim}. Layar berada di bagian atas dari salah satu sisi terluas perangkat. Pengguna diasumsikan manusia dewasa dengan tinggi badan 150-170 cm yang berdiri di depan layar pada jarak yang wajar diambil saat melakukan komunikasi tatap muka antar manusia (kurang lebih 1 meter). Pengguna juga diasumsikan menghadap ke layar saat berbicara, sedemikian sehingga sinyal suara yang dihasilkan dapat ditangkap oleh mikrofon-mikrofon yang ditempelkan pada perangkat.

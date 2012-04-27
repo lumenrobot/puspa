@@ -1,0 +1,213 @@
+%\chapter{\uppercase{Subsistem Penentuan Posisi Pengguna Berdasarkan Sinyal Suara Untuk RESTU}}
+\chapter{\uppercase{Perancangan SpeaCal Untuk RESTU}}
+\label{chap:perancangan}
+
+\input{RESTU}
+
+\section{\textit{Speaker Localization} (SpeaCal)}
+\label{sec:speacal}
+
+SpeaCal, yang berasal dari istilah \textit{Speaker Localization}, merupakan subsistem penentuan posisi pengguna berdasarkan sinyal suara, yang dalam \autoref{fig:RESTU_arch} disebut sebagai \textit{Sound Localization}. \autoref{sec:speacal} ini akan menguraikan proses perancangan SpeaCal yang menggunakan model perancangan iteratif. Perancangan melalui tahap pendefinisian kebutuhan, penentuan spesifikasi, pembuatan desain, pengimplementasian desain, serta pengujian dan evaluasi. Proses iterasi dilakukan pada tiga tahap yang disebutkan terakhir.
+
+Tahap pembuatan desain meliputi pembuatan desain perangkat lunak dan desain perangkat keras, yang kemudian akan diimplementasikan pada tahap implementasi. Sedangkan, tahap pengujian dan evaluasi meliputi pengambilan data latih dan data uji yang akan digunakan untuk melatih dan menguji JST. Analisis kemudian dilakukan terhadap semua data yang diperoleh, tanpa membedakan antara data latih dan data uji, untuk menentukan apakah desain perangkat lunak dan perangkat keras dapat menghasilkan data yang cukup konsisten sehingga dapat digunakan untuk melatih JST. Apabila data tidak cukup konsisten, proses perancangan akan kembali pada tahap pembuatan desain.
+
+\subsection{Definisi Kebutuhan}
+
+SpeaCal dikembangkan spesifik untuk RESTU. Dari \autoref{chap:pendahuluan} dan \autoref{sec:RESTU}, fungsi penentuan posisi pengguna dibutuhkan untuk mengetahui ke arah mana mata atau kepala agen virtual harus menatap atau menoleh. Dalam komunikasi tatap muka antar manusia, kontak mata diperlukan untuk menunjukkan perhatian terhadap lawan bicara dan topik pembicaraan. meskipun demikian, kontak mata tidak berarti mata seseorang \textit{selalu} menatap lawan bicara \textit{tepat} di matanya selama percakapan.
+
+Dengan demikian, SpeaCal harus dapat menghasilkan informasi \textit{perkiraan} posisi pengguna berdasarkan suara pengguna yang ditangkap oleh mikrofon. Informasi perkiraan posisi yang menjadi prioritas utama adalah informasi \textit{azimuth}. Informasi ini kemudian harus dapat digunakan oleh \textit{AI Engine}, atau \textit{GUI Engine} secara langsung, untuk menentukan ke arah mana mata atau kepala agen virtual harus menatap atau menoleh.
+
+Definisi kebutuhan di atas dapat digambarkan oleh \autoref{fig:speacal_block_diagram}.
+
+\begin{figure}[ht!]
+\vskip 1em
+\centering
+ \includegraphics[width=.9\textwidth,keepaspectratio=true]{images/speacal_block_diagram.jpg}
+ \caption[Ilustrasi definisi kebutuhan SpeaCal]{Ilustrasi definisi kebutuhan SpeaCal.}
+ \label{fig:speacal_block_diagram}
+\vskip .5em
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\subsection{Spesifikasi}
+\label{subsec:spesifikasi}
+
+Dari definisi kebutuhan di atas, SpeaCal harus mampu memperkirakan posisi pengguna berdasarkan suara pengguna yang ditangkap oleh mikrofon. Untuk melakukannya, SpeaCal akan menggunakan parameter ITD dan/atau ILD yang membandingkan dua sinyal. Oleh karena itu, diperlukan lebih dari satu mikrofon untuk menangkap suara pengguna. Pada manusia, dua indera pendengaran dapat digunakan untuk memperkirakan \textit{azimuth} posisi sumber suara. Mengacu pada fakta ini, SpeaCal akan menggunakan empat buah mikrofon yang dipasang di bagian atas, bawah, kanan, dan kiri perangkat. Dengan mikrofon-mikrofon tersebut (selanjutnya disebut \textit{microphone array}) diharapkan informasi posisi sumber suara yang diperoleh tidak hanya \textit{azimuth}, tetapi juga \textit{elevation}.
+
+Untuk menangkap sinyal dari mikrofon dibutuhkan \textit{sound card}. Sinyal suara yang akan ditangkap oleh mikrofon adalah suara manusia, sehingga satu kanal suara (mono) saja cukup untuk merepresentasikan sinyal yang ditangkap dengan baik. Dengan demikian, untuk menangkap sinyal dari empat mikrofon dibutuhkan empat kanal suara. Dari hasil survei, \textit{sound card} yang dapat diakses (dibeli) dengan mudah dan harganya murah adalah \textit{USB sound card}. Perangkat seharga Rp 28.000,00 ini memiliki satu kanal masukan yang dapat dimanfaatkan untuk menerima sinyal dari mikrofon.
+
+Untuk mengelola empat \textit{sound card} ini dibutuhkan sebuah program (pustaka) yang mampu mengakses \textit{buffer} yang dimiliki \textit{sound card}, sehingga data sinyal yang tertangkap oleh mikrofon dapat disimpan dalam sebuah file. File-file representasi sinyal dari setiap mikrofon kemudian akan diolah untuk menghitung TDOA, sebagai parameter ITD, dan PtPAR, sebagai parameter ILD. Perhitungan TDOA akan menggunakan DFT agar komputasi dapat dilakukan dengan lebih cepat. Oleh karena itu, dibutuhkan pustaka yang mampu melakukan FFT.
+
+Parameter TDOA dan/atau PtPAR inilah yang kemudian digunakan oleh JST untuk memperkirakan posisi pengguna. Untuk membangun sebuah JST diperlukan kumpulan data latih dan data uji yang memuat nilai masukan, berupa nilai TDOA dan/atau PtPAR, dan nilai keluaran, berupa posisi. Data latih digunakan untuk membangun (melatih) JST, sedangkan data uji digunakan untuk menguji jaringan yang telah dilatih. JST tersebut kemudian digunakan untuk proses penentuan posisi pengguna saat SpeaCal telah diintegrasikan dalam RESTU. Oleh karena itu, dibutuhkan pustaka pustaka yang mampu membangun dan menggunakan JST.
+
+Dengan demikian, SpeaCal harus mampu:
+
+\begin{enumerate}
+\item menangkap suara pengguna dengan menggunakan \textit{microphone array}, yang terdiri dari empat mikrofon, secara bersamaan;
+\item menghitung TDOA dari sinyal suara yang ditangkap oleh \textit{microphone array};
+\item menghitung PtPAR dari sinyal suara yang ditangkap oleh \textit{microphone array};
+\item menyimpan data TDOA, PtPAR, dan posisi untuk membuat data latih dan data uji JST;
+\item melatih JST dengan nilai TDOA dan PtPAR yang didapatkan selama pengambilan data latih;
+\item menguji JST dengan nilai TDOA dan PtPAR yang didapatkan selama pengambilan data uji;
+\item menggunakan JST untuk menghasilkan informasi perkiraan posisi pengguna (sumber suara); dan
+\item mengirimkan informasi perkiraan posisi pengguna ke subsistem lain (\textit{AI Engine} atau \textit{GUI Engine}).
+\end{enumerate}
+
+Perangkat keras yang akan digunakan meliputi:
+
+\begin{itemize}
+\item perangkat \textit{multitouch screen} vertikal milik LSKK yang berdimensi 139 x 60 x 180 centimeter (panjang x lebar x tinggi) (\autoref{fig:multitouch-foto}, \autoref{fig:multitouch-dim});
+
+\item komputer:
+\begin{itemize}
+\item untuk perancangan serta pengambilan data latih dan uji: laptop Dell XPS M1330 dengan prosesor Intel$^{\small{\textregistered}}$~Core\texttrademark~2 Duo T8100 2,1 GHz dan memori 2 GB, dan
+\item untuk demo: komputer rakitan dengan prosesor Intel$^{\small{\textregistered}}$~Core\texttrademark~i7 2,67 GHz dan memori 2 GB;
+\end{itemize}
+
+\item \textit{USB sound card} tanpa merk (4 buah), dengan dua kanal keluaran yang hanya mendukung \textit{sample rate} 48 KHz dan satu kanal masukan yang hanya mendukung \textit{sample rate} 24 KHz (\autoref{fig:foto_sound_card_dan_hub});
+
+\item \textit{USB hub} merk Belkin, yang memiliki empat \textit{port} (\autoref{fig:foto_sound_card_dan_hub}); 
+
+\item mikrofon (4 buah) merk Genius seri MIC-01A, yang bagian tangkainya dipotong dan bagian kepalanya ditancapkan pada \textit{styrofoam} yang ditempelkan pada perangkat \textit{multitouch screen} vertikal (\autoref{fig:foto_mic_styrofoam}); dan
+
+\item \textit{speaker} merk Genius seri SP-i150;
+\end{itemize}
+
+Sedangkan, perangkat lunak yang akan digunakan meliputi:
+
+\begin{itemize}
+\item sistem operasi: Ubuntu 10.04.2 LTS;
+\item bahasa pemrograman: C, C++;
+\item IDE: CodeBlocks;
+\item pustaka: C Std Lib, C POSIX Lib, C++ Std Lib, Portaudio, FFTW3, FANN, Boost, wxWidgets;
+\item pengolah data: gedit, OpenOffice Calc;
+\item pendukung: Audacity, Octave.
+\end{itemize}
+
+\begin{figure}[ht!]
+\vskip 1em
+\centering
+ \includegraphics[height=12cm,keepaspectratio=true]{images/multitouch.jpg}
+ \caption[Foto perangkat \textit{multitouch screen} vertikal yang akan digunakan untuk demo RESTU]{Foto perangkat \textit{multitouch screen} vertikal yang akan digunakan untuk demo RESTU.}
+ \label{fig:multitouch-foto}
+\vskip .5em
+\end{figure}
+
+\begin{figure}[htp!]
+\vskip 1em
+\centering
+ \includegraphics[height=12cm,keepaspectratio=true]{images/multitouch-dim.jpg}
+ \caption[Dimensi bagian muka perangkat \textit{multitouch screen} vertikal yang akan digunakan untuk demo RESTU]{Dimensi bagian muka perangkat \textit{multitouch screen} vertikal yang akan digunakan untuk demo RESTU.}
+ \label{fig:multitouch-dim}
+\vskip .5em
+\end{figure}
+
+\begin{figure}[htp!]
+\vskip 1em
+  \begin{center}
+    \subfigure[Foto \textit{USB sound card} dan \textit{USB hub}.]
+    {\includegraphics[width=.475\textwidth,keepaspectratio=true]{images/foto_sound_card_dan_hub.jpg}
+    \label{fig:foto_sound_card_dan_hub}}
+    \subfigure[Foto instalasi mikrofon pada perangkat \textit{multitouch screen} vertikal.]
+    {\includegraphics[width=.475\textwidth,keepaspectratio=true]{images/foto_mic_styrofoam.jpg}
+    \label{fig:foto_mic_styrofoam}}
+  \end{center}
+  \caption[Foto \textit{USB sound card}, \textit{USB hub}, dan mikrofon yang digunakan dalam perancangan]{Foto sebagian perangkat keras yang digunakan dalam perancangan.}
+  \vskip .5em
+\end{figure}
+
+
+\input{Iterasi_1}
+\input{Iterasi_2}
+
+
+\addtocontents{toc}{\vspace{1em} \hfill {Halaman} \par}
+\subsection{Pelatihan dan Pengujian Jaringan Syaraf Tiruan}
+
+JST dilatih dengan menggunakan set data yang diperoleh pada Iterasi II. Data latih dan data uji yang digunakan berasal dari set data FAN\_9B dan FAW\_7B yang memiliki 240 data latih dan 60 data uji. Selain melakukan pelatihan dengan parameter yang sama secara berulang, parameter jumlah neuron tersembunyi dan \textit{mean squared error} (MSE) pelatihan (\textit{desired error}) juga diubah-ubah untuk memperoleh MSE pelatihan dan pengujian yang baik. Data dari proses pelatihan JST ditampilkan pada \autoref{tbl:data_pelatihan}.
+
+JST yang diperoleh kemudian diuji dengan set data MAF\_25A dan MSD\_5B yang masing-masing memuat 50 data, serta FAN\_9B\_2 yang memuat 150 data. Data dari proses pengujian JST ditampilkan pada \autoref{tbl:data_pengujian}. Data pengujian tersebut menunjukkan bahwa MSE rata-rata terendah diperoleh dari penggunaan JST yang dihasilkan pada pelatihan ke-7. JST inilah yang nantinya akan digunakan untuk memperkirakan posisi pengguna setelah subsistem diintegrasikan ke dalam RESTU.
+
+\begin{table}[ht!]
+  \vskip 1em
+\centering
+\caption{Data pelatihan JST.}
+\label{tbl:data_pelatihan}
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\textbf{Pelatihan} & \textbf{Jumlah} & \textbf{Jumlah neuron} & \textbf{MSE} & \textbf{MSE} \\
+\textbf{ke-} & \textbf{layer} & \textbf{tersembunyi} & \textbf{pelatihan} & \textbf{pengujian} \\
+\hline
+1 & 3 & 64 & 0,0009989900 & 0,010317 \\
+\hline
+2 & 3 & 32 & 0,0009997976 & 0,004737 \\
+\hline
+3 & 3 & 16 & 0,0009985201 & 0,000379 \\
+\hline
+4 & 3 & 16 & 0,0007484510 & 0,002396 \\
+\hline
+5 & 3 & 16 & 0,0004987848 & 0,004765 \\
+\hline
+6 & 3 & 16 & 0,0002499711 & 0,008815 \\
+\hline
+7 & 3 & 16 & 0,0001499649 & 0,005309 \\
+\hline
+8 & 3 & 16 & 0,0000999883 & 0,027223 \\
+\hline
+\end{tabular}
+  \vskip .5em
+\end{table}
+
+
+\begin{table}[ht!]
+  \vskip 1em
+\centering
+\caption{Data pengujian JST.}
+\label{tbl:data_pengujian}
+\begin{tabular}{| c | c | c | c | c |}
+\hline
+\textbf{JST Hasil} & \textbf{MSE} & \textbf{MSE} & \textbf{MSE} & \textbf{MSE} \\
+\textbf{Pelatihan ke-} & \textbf{MAF\_25A} & \textbf{MSD\_5B} & \textbf{FAN\_9B\_2} & \textbf{Rata-rata} \\
+\hline
+1 & 0,174747 & 0,366794 & 0,309057 & 0,283533 \\
+\hline
+2 & 0,191638 & 0,400196 & 0,467885 & 0,353240 \\
+\hline
+3 & 0,201244 & 0,372975 & 0,426066 & 0,333428 \\
+\hline
+4 & 0,199302 & 0,219985 & 0,417764 & 0,279017 \\
+\hline
+5 & 0,176784 & 0,230723 & 0,445191 & 0,284233 \\
+\hline
+6 & 0,172334 & 0,368824 & 0,437893 & 0,326350 \\
+\hline
+7 & 0,139543 & 0,210295 & 0,464500 & 0,271446 \\
+\hline
+8 & 0,181249 & 0,356440 & 0,602393 & 0,380027 \\
+\hline
+\end{tabular}
+  \vskip .5em
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Analisis Hasil}
+
+Dari proses perancangan yang telah dilakukan, beberapa pencapaian yang telah diperoleh antara lain sebagai berikut.
+
+\begin{enumerate}
+\item Menangkap suara pengguna dengan menggunakan \textit{microphone array}, yang terdiri dari empat mikrofon, secara bersamaan memanfaatkan pustaka Portaudio. Representasi sinyal yang ditangkap disimpan dalam file yang berekstensi \texttt{raw}.
+\item Menghitung TDOA dari sinyal suara yang ditangkap oleh \textit{microphone array} menggunakan metode CCC. Implementasi CCC menggunakan DFT memanfaatkan pustaka FFTW3. Implementasi telah diverifikasi kebenarannya dengan cara membandingkan hasil perhitungan yang diperoleh dari implementasi dengan hasil perhitungan yang diperoleh dari fungsi \texttt{xcorr} pada program Octave.
+\item Menghitung PtPAR dari sinyal suara yang ditangkap oleh \textit{microphone array}. Implementasi telah diverifikasi kebenarannya dengan cara membandingkan hasil perhitungan yang diperoleh dari implementasi dengan hasil pengamatan grafik sinyal yang ditampilkan program Audacity.
+\item Menyimpan data TDOA, PtPAR, dan posisi untuk membuat data latih dan data uji JST.
+\item Melatih JST dengan nilai TDOA dan/atau PtPAR yang didapatkan selama pengambilan data latih dengan memanfaatkan pustaka FANN.
+\item Menguji JST dengan nilai TDOA dan/atau PtPAR yang didapatkan selama pengambilan data uji dengan memanfaatkan pustaka FANN.
+\end{enumerate}
+
+Pada awal penelitian, parameter TDOA dan PtPAR diperkirakan dapat digunakan untuk melakukan penentuan posisi sumber suara, atau dalam hal ini adalah posisi pengguna. Parameter PtPAR terbukti dapat digunakan untuk memperkirakan posisi pengguna, sedangkan parameter TDOA tidak dapat. Meskipun demikian, parameter TDOA sebenarnya merupakan parameter yang banyak digunakan dalam penentuan posisi sumber suara sehingga tingkat keakuratannya seharusnya cukup baik. Oleh karena itu, tidak dapat digunakannya parameter tersebut dalam penelitian ini disebabkan oleh desain dan implementasi yang kurang sesuai dengan batasan masalah TDOA.
+
+Faktor utama yang menyebabkan hasil perhitungan TDOA sangat tidak konsisten adalah faktor perangkat keras yang digunakan. Penggunaan \textit{USB sound card} yang kemudian datanya dikelola oleh program yang memanfaatkan pustaka Portaudio tidak dapat menghasilkan representasi data sinyal yang baik karena batasan waktu tidak ditepati dengan baik. Dari pengamatan, proses perekaman yang dilakukan oleh empat \textit{sound card} tidak berjalan secara bersamaan. Pengamatan dilakukan dengan memberikan penanda waktu (\textit{timestamp}) saat proses merekam mulai dan berakhir. Dari penanda waktu tersebut diketahui bahwa durasi perekaman tidak pernah terpenuhi dan durasi \textit{sound card} yang satu dengan yang lain dalam mengambil data tidak sama , meskipun semua \textit{sound card} diset untuk merekam dalam durasi yang sama. Sebagai contoh, apabila semua \textit{sound card} diset untuk merekam selama 1 detik, penanda waktu menunjukkan bahwa \textit{sound card} merekam dalam durasi $1 + \delta t$, dengan $\delta t$ bervariasi antara satu \textit{sound card} dengan \textit{sound card} yang lain. Apabila  $\delta t$ dari satu proses perekaman ke proses yang lain sama (konsisten), permasalahan mungkin dapat dipecahkan dengan memberikan \textit{offset} pada data. Dari pengamatan $\delta t$ dari satu proses perekaman ke proses yang lain tidak konsisten. meskipun nilai $\delta t$ hanya dalam orde milidetik, pada dasarnya file representasi sinyal suara yang diperoleh tidak dapat digunakan untuk menghitung TDOA. Apabila sinyal tersebut digunakan untuk menghitung TDOA, hasil perhitungan merupakan nilai yang tidak valid karena nilai tersebut sangat dipengaruhi oleh $\delta t$ sehingga tidak merepresentasikan perbedaan waktu yang dibutuhkan propagasi sinyal dari sumber suara ke mikrofon dengan baik.
+
+Untuk memecahkan permasalahan tersebut dibutuhkan perangkat akuisisi sinyal yang mampu berjalan secara \textit{real-time}, seperti yang digunakan pada \cite{lee2005}, \cite{nakano2010}, dan \cite{park2009}. Pada prinsipnya, apabila \textit{time-constraint} yang diberikan dapat ditepati dengan baik, dengan asumsi model \textit{free-field} ideal, representasi sinyal akan memenuhi \autoref{eq:sinyal_ditangkap}.
